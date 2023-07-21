@@ -7,7 +7,7 @@ Dependencies: FLTK 1.3.8
 
 In project settings:
 - Set additional include directories to "\<project directory\>/libs/fltk"
-...
+TEST
 - Set additional library path for DEBUG to "\<project directory\>/libs/fltk/lib/Debug"
 - Set additional library path for RELEASE to "\<project directory\>/libs/fltk/lib/Release"
 ...
