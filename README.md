@@ -1,4 +1,5 @@
 This program uses 7z.dll and 7z.exe
+
 [7Zip License](https://www.7-zip.org/license.txt)
 
 # Building
