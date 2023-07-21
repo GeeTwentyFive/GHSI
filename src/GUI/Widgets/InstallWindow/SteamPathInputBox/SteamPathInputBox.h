@@ -1,0 +1,53 @@
+#pragma once
+
+
+#include "../../../GUI.h"
+
+#include "FL/Fl_File_Input.H"
+#include "FL/Fl_Output.H"
+#include "FL/Fl_Button.H"
+#include "FL/Fl_Native_File_Chooser.H"
+
+
+
+
+#define STEAM_PATH_INPUT_TEXTSIZE 20
+
+
+
+
+#define STEAM_PATH_INPUT_LABEL_TEXT "Steam directory path:"
+#define STEAM_PATH_INPUT_LABEL_HEIGHT 40
+#define STEAM_PATH_INPUT_LABEL_WIDTH 200
+#define STEAM_PATH_INPUT_LABEL_X STEAM_PATH_INPUT_X
+#define STEAM_PATH_INPUT_LABEL_Y (STEAM_PATH_INPUT_Y - STEAM_PATH_INPUT_LABEL_HEIGHT)
+#define STEAM_PATH_INPUT_LABEL_TEXTSIZE 20
+#define STEAM_PATH_INPUT_LABEL_TEXTCOLOR FL_WHITE
+#define STEAM_PATH_INPUT_LABEL_BGCOLOR FL_BLACK
+
+
+
+
+#define STEAM_PATH_INPUT_BROWSE_BUTTON_WIDTH 100
+#define STEAM_PATH_INPUT_BROWSE_BUTTON_HEIGHT 25
+#define STEAM_PATH_INPUT_BROWSE_BUTTON_X ((STEAM_PATH_INPUT_X + STEAM_PATH_INPUT_WIDTH) - STEAM_PATH_INPUT_BROWSE_BUTTON_WIDTH)
+#define STEAM_PATH_INPUT_BROWSE_BUTTON_Y (STEAM_PATH_INPUT_Y - STEAM_PATH_INPUT_BROWSE_BUTTON_HEIGHT)
+#define STEAM_PATH_INPUT_BROWSE_BUTTON_LABELSIZE 16
+#define STEAM_PATH_INPUT_BROWSE_BUTTON_LABEL "Browse"
+
+
+
+
+#define FILE_CHOOSER_TITLE "\nSelect Steam directory"
+
+
+
+
+extern Fl_File_Input* steamPathInput;
+
+extern Fl_Button* steamPathInputBrowseButton;
+
+
+
+
+void InitializeSteamPathInputBox();

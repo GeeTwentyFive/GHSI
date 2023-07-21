@@ -1,0 +1,6 @@
+#include "resource.h"
+
+MAPS BINARY "src\\Installer\\ExtraGameContent\\maps.zip"
+
+MAINICON ICON "GHSI.ico"
+
