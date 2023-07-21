@@ -3,6 +3,7 @@ This program uses 7z.dll and 7z.exe
 
 # Building
 This program was made with Visual Studio 2022 on Windows 10
+
 Dependencies: FLTK 1.3.8
 
 In project settings:
