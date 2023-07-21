@@ -11,7 +11,12 @@ This program uses 7z.dll and 7z.exe
 # Building
 This program was made with Visual Studio 2022 on Windows 10
 
-Dependencies: FLTK 1.3.8
+Dependencies: FLTK 1.3.8, maps.zip
+
+"maps.zip" is just an archive containing multiple map files.
+I did not include it because the file size was too big \(over 100MB\) so Github wouldn't let me.
+
+Where it was located: "\<project directory\>/src/Installer/ExtraGameContent/maps.zip"
 
 In project settings:
 - Set additional include directories to "\<project directory\>/libs/fltk"
