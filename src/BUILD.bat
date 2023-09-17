@@ -1,0 +1,1 @@
+go build -o "GHSI V2.exe"
