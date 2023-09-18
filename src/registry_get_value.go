@@ -1,26 +1,22 @@
 package main
 
 import (
-	"log"
-
 	"golang.org/x/sys/windows/registry"
 )
 
-func regGetStringValueFromKey(k registry.Key, path, name string) string {
+func regGetStringValueFromKey(baseKey registry.Key, path, name string) (string, error) {
 
-	_k, err := registry.OpenKey(k, path, registry.QUERY_VALUE)
+	k, err := registry.OpenKey(baseKey, path, registry.QUERY_VALUE)
 	if err != nil {
-		log.Fatal("\nFailed to get handle to key at path \""+path+"\"\n", err)
-		return ""
+		return "", err
 	}
-	defer _k.Close()
+	defer k.Close()
 
-	s, _, err := _k.GetStringValue(name)
+	s, _, err := k.GetStringValue(name)
 	if err != nil {
-		log.Fatal("\nFailed to read string value from \""+name+"\" in key \""+path+"\"\n", err)
-		return ""
+		return "", err
 	}
 
-	return s
+	return s, nil
 
 }

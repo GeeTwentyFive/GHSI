@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	_ "embed"
 	"fmt"
 	"log"
@@ -20,8 +21,40 @@ var (
 
 func init() {
 
-	steamLibraryDataPath = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SteamPath") + "\\steamapps\\libraryfolders.vdf"
-	sourcemodsPath = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SourceModInstallPath")
+	var (
+		err          error
+		steamBaseDir string
+	)
+
+	steamBaseDir, err = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SteamPath")
+	if err != nil {
+		reader := bufio.NewReader(os.Stdin)
+
+		fmt.Print("\nERROR: Failed to fetch Steam base directory path from registry.\n\nEnter path to Steam base directory (Default: \"C\\Program Files (x86)\\Steam\"): ")
+
+		in, err := reader.ReadString('\n')
+		if err != nil {
+			log.Fatal("\nERROR: Failed to get user input from user\n")
+		}
+
+		if len(in) > 2 {
+			if directoryExists(in) {
+				steamBaseDir = in
+			} else {
+				log.Fatal("\nERROR: Path \"" + in + "\" does not point to an existing directory")
+			}
+		} else {
+			steamBaseDir = "C\\Program Files (x86)\\Steam"
+		}
+	}
+
+	steamLibraryDataPath = steamBaseDir + "\\steamapps\\libraryfolders.vdf"
+
+	sourcemodsPath, err = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SourceModInstallPath")
+	if err != nil {
+		sourcemodsPath = steamBaseDir + "\\steamapps\\sourcemods"
+		fmt.Println("\nERROR: Failed to fetch Sourcemod install path from directory. Using \"" + sourcemodsPath + "\" instead")
+	}
 
 }
 
@@ -72,7 +105,8 @@ func installGame() {
 	cmd := exec.Command("taskkill", "/F", "/IM", "Steam.exe")
 	cmd.Run()
 
-	fmt.Println("Installing Hidden: Source - Enhanced Edition...")
+	fmt.Print("Installing Hidden: Source - Enhanced Edition...")
+	startSpinner() //Refactor
 
 	gameFilesCompressedOutPath := os.TempDir() + "\\output.zip"
 
@@ -93,5 +127,7 @@ func installGame() {
 	}
 
 	os.Remove(gameFilesCompressedOutPath)
+
+	stopSpinner() //Refactor
 
 }
