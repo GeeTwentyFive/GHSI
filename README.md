@@ -6,7 +6,7 @@ The modifications:
 - cl_downloadfilter all (to (usually) prevent missing map error when joining a server which is running a map you don't have)
 
 # Usage
-Run `GHSI V2.exe`
+Run `GHSI.exe`
 
 # Building
 1) Download `game_files.zip` from https://drive.google.com/file/d/1J655lt8gKEV50SkkTfG1KGwsuwTOqYoa/view?usp=sharing, and place it in `src` directory
