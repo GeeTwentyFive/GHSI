@@ -2,29 +2,41 @@ package main
 
 import (
 	"bufio"
-	_ "embed"
 	"fmt"
-	"log"
 	"os"
 	"os/exec"
 
 	"golang.org/x/sys/windows/registry"
 )
 
-//go:embed game_files.zip
-var GameFilesCompressed []byte
-
 var (
+	installerDataPath = os.TempDir() + "\\GHSI"
+
+	steamBaseDir         string
 	steamLibraryDataPath string
+	appManifest          []byte
 	sourcemodsPath       string
+
+	progressSpinner ProgressSpinner
 )
 
 func init() {
 
-	var (
-		err          error
-		steamBaseDir string
-	)
+	var err error
+
+	if !fileExists("InstallerData") {
+		pauseFatal("ERROR: InstallerData not found")
+	}
+
+	fmt.Print("Extracting installer data...")
+	progressSpinner.start()
+
+	err = unzip("InstallerData", os.TempDir())
+	if err != nil {
+		pauseFatal("ERROR: Failed to extract installer data")
+	}
+
+	progressSpinner.stop()
 
 	steamBaseDir, err = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SteamPath")
 	if err != nil {
@@ -34,21 +46,28 @@ func init() {
 
 		in, err := reader.ReadString('\n')
 		if err != nil {
-			log.Fatal("\nERROR: Failed to get user input from user\n")
+			pauseFatal("ERROR: Failed to get user input from user")
 		}
 
 		if len(in) > 2 {
 			if directoryExists(in) {
 				steamBaseDir = in
 			} else {
-				log.Fatal("\nERROR: Path \"" + in + "\" does not point to an existing directory")
+				pauseFatal("ERROR: Path \"" + in + "\" does not point to an existing directory")
 			}
 		} else {
 			steamBaseDir = "C\\Program Files (x86)\\Steam"
 		}
 	}
 
+	//Using "libraryfolders.vdf" to check whether or not Source SDK Base 2006 is installed instead of "appmanifest_215.vdf"
+	//cause multiple Steam library installation locations are supported by Steam,
+	//and the contents of each are updated to "libraryfolders.vdf".
+	//It is a library install location -independent resource regarding the installed apps in all the registered install locations for the Steam library.
+	//Using it instead of checking each location.
 	steamLibraryDataPath = steamBaseDir + "\\steamapps\\libraryfolders.vdf"
+
+	appManifest = []byte(appManifestPrePath + steamBaseDir + "\\steam.exe" + appManifestPostPath)
 
 	sourcemodsPath, err = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SourceModInstallPath")
 	if err != nil {
@@ -60,9 +79,16 @@ func init() {
 
 func main() {
 
+	fmt.Println("Exiting Steam (if running)...")
+
+	cmd := exec.Command("taskkill", "/F", "/IM", "Steam.exe")
+	cmd.Run()
+
 	installGameDependencies()
 
 	installGame()
+
+	os.RemoveAll(installerDataPath)
 
 	MessageBox("Success!", "Installation completed!")
 
@@ -74,7 +100,7 @@ func installGameDependencies() {
 
 	d, err := os.ReadFile(steamLibraryDataPath)
 	if err != nil {
-		log.Fatal("\nFailed to read from file at path \""+steamLibraryDataPath+"\"\n", err)
+		pauseFatal("Failed to read from file at path \"" + steamLibraryDataPath + "\"")
 	}
 
 	// Source SDK Base 2006 AppID byte pattern in "libraryfolders.vdf" is "34, 50, 49, 53, 34"
@@ -88,46 +114,39 @@ func installGameDependencies() {
 	if sourceSDKBase2006Installed {
 		fmt.Println("Source SDK Base 2006 already installed")
 	} else {
-		fmt.Println("Source SDK Base 2006 not installed. Install it on Steam.\n\tLibrary -> Home -> Tools -> \"Source SDK Base 2006\"")
+		fmt.Print("Installing Source SDK Base 2006...")
+		progressSpinner.start()
 
-		cmd := exec.Command("explorer", "steam://install/215")
-		cmd.Run()
+		steamappsPath := steamBaseDir + "\\steamapps"
+		steamappsCommonPath := steamappsPath + "\\common"
 
-		MessageBox("", "Install \"Source SDK Base 2006\" on Steam.\nPress OK after installation has completed.")
+		var err error
+
+		err = os.WriteFile(steamappsPath+"\\appmanifest_215.acf", appManifest, 0)
+		if err != nil {
+			pauseFatal("App manifest 215 WriteFile() failed")
+		}
+
+		err = copy(installerDataPath+"\\source_sdk_base_2006", steamappsCommonPath)
+		if err != nil {
+			pauseFatal("ERROR: Failed to copy Source SDK Base 2006 files from \"" + installerDataPath + "\" to \"" + steamappsCommonPath + "\"")
+		}
+
+		progressSpinner.stop()
 	}
 
 }
 
 func installGame() {
 
-	fmt.Println("Exiting Steam (if running)...")
-
-	cmd := exec.Command("taskkill", "/F", "/IM", "Steam.exe")
-	cmd.Run()
-
 	fmt.Print("Installing Hidden: Source - Enhanced Edition...")
-	startSpinner() //Refactor
+	progressSpinner.start()
 
-	gameFilesCompressedOutPath := os.TempDir() + "\\output.zip"
-
-	if fileExists(gameFilesCompressedOutPath) {
-		if err := os.Remove(gameFilesCompressedOutPath); err != nil {
-			log.Fatal("\nFailed to remove pre-existing file at path \""+gameFilesCompressedOutPath+"\"\n", err)
-		}
-	}
-
-	err := os.WriteFile(gameFilesCompressedOutPath, GameFilesCompressed, 0)
+	err := copy(installerDataPath+"\\game_files", sourcemodsPath)
 	if err != nil {
-		log.Fatal("\ngame_files.zip WriteFile failed\n", err)
+		pauseFatal("ERROR: Failed to copy Hidden: Source - Enhanced Edition files from \"" + installerDataPath + "\" to \"" + sourcemodsPath + "\"")
 	}
 
-	err = unzip(gameFilesCompressedOutPath, sourcemodsPath)
-	if err != nil {
-		log.Fatal("\nFailed to extract compressed game files from "+gameFilesCompressedOutPath+" to "+sourcemodsPath+"\n", err)
-	}
-
-	os.Remove(gameFilesCompressedOutPath)
-
-	stopSpinner() //Refactor
+	progressSpinner.stop()
 
 }

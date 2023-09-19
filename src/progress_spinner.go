@@ -5,16 +5,12 @@ import (
 	"time"
 )
 
-// TO DO?: Make it duck-typed
-// ps = ProgressSwirl()
-// ps.stop()
+type ProgressSpinner struct {
+	quit chan bool
+}
 
-// REFACTOR THIS!!!
-
-var quit chan bool
-
-func startSpinner() {
-	quit = make(chan bool)
+func (p *ProgressSpinner) start() {
+	p.quit = make(chan bool)
 
 	go func() {
 		var (
@@ -29,7 +25,7 @@ func startSpinner() {
 
 		for {
 			select {
-			case <-quit:
+			case <-p.quit:
 				return
 
 			default:
@@ -49,8 +45,8 @@ func startSpinner() {
 	}()
 }
 
-func stopSpinner() {
+func (p *ProgressSpinner) stop() {
 	fmt.Print("\r \r")
 
-	quit <- true
+	p.quit <- true
 }
