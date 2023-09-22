@@ -9,5 +9,5 @@ The modifications:
 Run `GHSI.exe`
 
 # Building
-1. Place `game_files.7z` and `source_sdk_base_2006.7z` [(link)](https://drive.google.com/file/d/1sfMDd5KmIeHzoPyY-3ZqO0blPHjoscel/view?usp=sharing) in `src` directory
+1. Place `game_files.7z` and `source_sdk_base_2006.7z` ([link](https://drive.google.com/file/d/1sfMDd5KmIeHzoPyY-3ZqO0blPHjoscel/view?usp=sharing)) in `src` directory
 2. `go build`
