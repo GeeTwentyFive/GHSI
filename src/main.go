@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	_ "embed"
 	"fmt"
 	"os"
 	"os/exec"
@@ -9,13 +10,22 @@ import (
 	"golang.org/x/sys/windows/registry"
 )
 
-var (
-	installerDataPath = os.TempDir() + "\\GHSI"
+//go:embed 7zdec.exe
+var szDecData []byte
 
+//go:embed source_sdk_base_2006.7z
+var sourceSdkBase2006CompressedData []byte
+
+//go:embed game_files.7z
+var gameFilesCompressedData []byte
+
+var (
 	steamBaseDir         string
 	steamLibraryDataPath string
 	appManifest          []byte
 	sourcemodsPath       string
+
+	szDecPath string = os.TempDir() + "\\7zdec.exe"
 
 	progressSpinner ProgressSpinner
 )
@@ -23,20 +33,6 @@ var (
 func init() {
 
 	var err error
-
-	if !fileExists("InstallerData") {
-		pauseFatal("ERROR: InstallerData not found")
-	}
-
-	fmt.Print("Extracting installer data...")
-	progressSpinner.start()
-
-	err = unzip("InstallerData", os.TempDir())
-	if err != nil {
-		pauseFatal("ERROR: Failed to extract installer data")
-	}
-
-	progressSpinner.stop()
 
 	steamBaseDir, err = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SteamPath")
 	if err != nil {
@@ -72,7 +68,19 @@ func init() {
 	sourcemodsPath, err = regGetStringValueFromKey(registry.CURRENT_USER, "Software\\Valve\\Steam", "SourceModInstallPath")
 	if err != nil {
 		sourcemodsPath = steamBaseDir + "\\steamapps\\sourcemods"
-		fmt.Println("\nERROR: Failed to fetch Sourcemod install path from directory. Using \"" + sourcemodsPath + "\" instead")
+		fmt.Println("\nERROR: Failed to fetch Sourcemod install path from registry. Using \"" + sourcemodsPath + "\" instead")
+	}
+
+	if fileExists(szDecPath) {
+		err = os.Remove(szDecPath)
+		if err != nil {
+			pauseFatal("ERROR: Failed to remove 7zdec.exe at \"" + os.TempDir() + "\"")
+		}
+	}
+
+	err = os.WriteFile(szDecPath, szDecData, 0)
+	if err != nil {
+		pauseFatal("ERROR: Failed to extract 7zdec.exe")
 	}
 
 }
@@ -88,7 +96,7 @@ func main() {
 
 	installGame()
 
-	os.RemoveAll(installerDataPath)
+	os.Remove(szDecPath)
 
 	MessageBox("Success!", "Installation completed!")
 
@@ -117,20 +125,48 @@ func installGameDependencies() {
 		fmt.Print("Installing Source SDK Base 2006...")
 		progressSpinner.start()
 
-		steamappsPath := steamBaseDir + "\\steamapps"
-		steamappsCommonPath := steamappsPath + "\\common"
+		manifestPath := steamBaseDir + "\\steamapps\\appmanifest_215.acf"
+		steamappsCommonPath := steamBaseDir + "\\steamapps\\common"
 
 		var err error
 
-		err = os.WriteFile(steamappsPath+"\\appmanifest_215.acf", appManifest, 0)
+		if fileExists(manifestPath) { // If the manifest exists but the Source SDK Base 2006 AppID isn't in "libraryfolders.vdf", then Source SDK Base 2006 install might be brokey, so this might (along with following code) fix it :thumbsup:
+			err = os.Remove(manifestPath)
+			if err != nil {
+				pauseFatal("ERROR: Failed to remove file \"" + manifestPath + "\"")
+			}
+		}
+
+		err = os.WriteFile(manifestPath, appManifest, 0)
 		if err != nil {
 			pauseFatal("App manifest 215 WriteFile() failed")
 		}
 
-		err = copy(installerDataPath+"\\source_sdk_base_2006", steamappsCommonPath)
-		if err != nil {
-			pauseFatal("ERROR: Failed to copy Source SDK Base 2006 files from \"" + installerDataPath + "\" to \"" + steamappsCommonPath + "\"")
+		sSDKBase2006CDOutPath := os.TempDir() + "\\source_sdk_base_2006.7z"
+
+		if fileExists(sSDKBase2006CDOutPath) {
+			err = os.Remove(sSDKBase2006CDOutPath)
+			if err != nil {
+				pauseFatal("ERROR: Failed to remove file \"" + sSDKBase2006CDOutPath + "\"")
+			}
 		}
+
+		err = os.WriteFile(sSDKBase2006CDOutPath, sourceSdkBase2006CompressedData, 0)
+		if err != nil {
+			pauseFatal("ERROR: Failed to write Source SDK Base 2006 compressed data to \"" + os.TempDir() + "\"")
+		}
+
+		err = os.Chdir(steamappsCommonPath)
+		if err != nil {
+			pauseFatal("ERROR: Failed to change current working directory to \"" + steamappsCommonPath + "\"")
+		}
+
+		cmd := exec.Command(szDecPath, "x", sSDKBase2006CDOutPath)
+		if err = cmd.Run(); err != nil {
+			pauseFatal("ERROR: Failed to extract Source SDK Base 2006 to \"" + steamappsCommonPath + "\"")
+		}
+
+		os.Remove(sSDKBase2006CDOutPath)
 
 		progressSpinner.stop()
 	}
@@ -142,10 +178,33 @@ func installGame() {
 	fmt.Print("Installing Hidden: Source - Enhanced Edition...")
 	progressSpinner.start()
 
-	err := copy(installerDataPath+"\\game_files", sourcemodsPath)
-	if err != nil {
-		pauseFatal("ERROR: Failed to copy Hidden: Source - Enhanced Edition files from \"" + installerDataPath + "\" to \"" + sourcemodsPath + "\"")
+	var err error
+
+	gameFilesCDOutPath := os.TempDir() + "\\game_files.7z"
+
+	if fileExists(gameFilesCDOutPath) {
+		err = os.Remove(gameFilesCDOutPath)
+		if err != nil {
+			pauseFatal("ERROR: Failed to remove file \"" + gameFilesCDOutPath + "\"")
+		}
 	}
+
+	err = os.WriteFile(gameFilesCDOutPath, gameFilesCompressedData, 0)
+	if err != nil {
+		pauseFatal("ERROR: Failed to write Hidden: Source - Enhanced Edition compressed data to \"" + os.TempDir() + "\"")
+	}
+
+	err = os.Chdir(sourcemodsPath)
+	if err != nil {
+		pauseFatal("ERROR: Failed to change current working directory to \"" + sourcemodsPath + "\"")
+	}
+
+	cmd := exec.Command(szDecPath, "x", gameFilesCDOutPath)
+	if err = cmd.Run(); err != nil {
+		pauseFatal("ERROR: Failed to extract Hidden: Source - Enhanced Edition to \"" + sourcemodsPath + "\"")
+	}
+
+	os.Remove(gameFilesCDOutPath)
 
 	progressSpinner.stop()
 
