@@ -7,10 +7,9 @@ The modifications:
 - cl_downloadfilter all (to (usually) prevent missing map error when joining a server which is running a map you don't have)
 - Listen server fix
 - Sonic trip alarm sound fix
+- Master server list fix
 
 # Usage
 Run `GHSI.exe`
 
-# Building
-1. Place `game_files.tar.gz` ([link](https://drive.google.com/file/d/13jZhA-mfTgCHircKzwdE9aM4p89tNB-b/view?usp=sharing)) in `src` directory
-2. `go build`
+For dedicated server: Download `HiddenServer.7z` -> extract -> run `START_SERVER.bat`

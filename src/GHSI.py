@@ -6,8 +6,8 @@ import base64
 import tarfile
 
 
-GAME_FILES_COMPRESSED_DATA = b"" # TODO
-SERVER_BROWSER_FIX_COMPRESSED_DATA = b"" # TODO
+from _GAME_FILES_COMPRESSED_DATA import GAME_FILES_COMPRESSED_DATA
+from _SERVER_BROWSER_FIX_COMPRESSED_DATA import SERVER_BROWSER_FIX_COMPRESSED_DATA
 
 
 def show_message_box(msg: str, title: str = ""):
@@ -35,7 +35,7 @@ print("Installing Hidden: Source - Enhanced Edition...")
 try:
 	game_files_out_path = tempfile.gettempdir() + "\\_GHSI_game_files.tar.gz"
 	with open(game_files_out_path, "wb") as f:
-		f.write(base64.a85decode(GAME_FILES_COMPRESSED_DATA))
+		f.write(base64.b64decode(GAME_FILES_COMPRESSED_DATA))
 except Exception as e:
 	input(f"ERROR: Failed to write Hidden: Source - Enhanced Edition compressed data to {game_files_out_path}\n{e}")
 	exit(1)
@@ -61,7 +61,7 @@ print("Patching Source SDK Base 2006 server browser...")
 try:
 	server_browser_fix_out_path = tempfile.gettempdir() + "\\_GHSI_server_browser_fix.tar.gz"
 	with open(server_browser_fix_out_path, "wb") as f:
-		f.write(base64.a85decode(GAME_FILES_COMPRESSED_DATA))
+		f.write(base64.b64decode(SERVER_BROWSER_FIX_COMPRESSED_DATA))
 except Exception as e:
 	input(f"ERROR: Failed to write server browser fix compressed data to {server_browser_fix_out_path}\n{e}")
 	exit(1)
@@ -71,7 +71,7 @@ try:
 except Exception as e:
 	input(f"ERROR: Failed to fetch Steam path from registry\n{e}")
 	exit(1)
-source_sdk_base_2006_path = steam_path + "steamapps\\common\\Source SDK Base"
+source_sdk_base_2006_path = steam_path + "\\steamapps\\common\\Source SDK Base"
 
 try:
 	with tarfile.open(server_browser_fix_out_path, "r:gz") as t:
