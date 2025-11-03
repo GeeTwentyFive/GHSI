@@ -1,0 +1,2 @@
+src/_GAME_FILES_COMPRESSED_DATA.py filter=lfs diff=lfs merge=lfs -text
+src/_SERVER_BROWSER_FIX_COMPRESSED_DATA.py filter=lfs diff=lfs merge=lfs -text
