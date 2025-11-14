@@ -9,7 +9,12 @@ The modifications:
 - Sonic trip alarm sound fix
 - Master server list fix
 
+
 # Usage
 Run `GHSI.exe`
 
 For dedicated server: Download `HiddenServer.7z` -> extract -> run `START_SERVER.bat`
+
+
+# Contributors
+- Gamma (shygamma)
