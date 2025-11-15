@@ -27,3 +27,6 @@ For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLau
 
 # Contributors
 - Gamma (shygamma)
+
+
+### Unofficial community Discord server: https://discord.gg/8fvmPxjfaF
