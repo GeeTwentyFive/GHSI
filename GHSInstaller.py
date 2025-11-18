@@ -1,14 +1,16 @@
 import ctypes
 import winreg
-import os
+from libs import steamapp_installer
 import tempfile
 import base64
 import tarfile
+import os
+import psutil
 
 
-from _GAME_FILES_COMPRESSED_DATA import GAME_FILES_COMPRESSED_DATA
-from _GAME_LAUNCHER_DATA import GAME_LAUNCHER_DATA
-from _SERVER_BROWSER_FIX_COMPRESSED_DATA import SERVER_BROWSER_FIX_COMPRESSED_DATA
+from src._GAME_FILES_COMPRESSED_DATA import GAME_FILES_COMPRESSED_DATA
+from src._GAME_LAUNCHER_DATA import GAME_LAUNCHER_DATA
+from src._SERVER_BROWSER_FIX_COMPRESSED_DATA import SERVER_BROWSER_FIX_COMPRESSED_DATA
 
 
 def show_message_box(msg: str, title: str = ""):
@@ -24,9 +26,10 @@ def registry_get_string_from_key(root: winreg.HKEYType, path: str, name: str):
 	return value[0]
 
 
-# Prompt user to install Source SDK Base 2006
-os.system("explorer steam://install/215")
-show_message_box("Install 'Source SDK Base 2006' on Steam\n\nPRESS 'OK' ONLY *AFTER* IT IS ALREADY INSTALLED")
+# Install Source SDK Base 2006
+
+steamapp_installer.install(215, "Source SDK Base") # TEMP; TEST
+show_message_box("Installing 'Source SDK Base 2006' on Steam...\n\nPRESS 'OK' ONLY *AFTER* IT IS ALREADY INSTALLED")
 
 
 # Install Hidden: Source - Enhanced Edition
@@ -49,13 +52,13 @@ except Exception as e:
 
 try:
 	with tarfile.open(game_files_out_path, "r:gz") as t:
-		t.extractall(sourcemods_path)
+		t.extractall(sourcemods_path, filter="fully_trusted")
 except Exception as e:
 	input(f"ERROR: Failed to extract Hidden: Source - Enhanced Edition to {sourcemods_path}\n{e}")
 	exit(1)
 
 try:
-	with open(os.getenv("userprofile")+"\\Desktop\\GHSLauncher.exe", "wb") as f:
+	with open(os.path.join(os.getenv("userprofile"), "Desktop\\GHSLauncher.exe"), "wb") as f:
 		f.write(base64.b64decode(GAME_LAUNCHER_DATA))
 except Exception as e:
 	input(f"ERROR: Failed to write GHSLauncher.exe to Desktop\n{e}")
@@ -83,7 +86,7 @@ source_sdk_base_2006_path = steam_path + "\\steamapps\\common\\Source SDK Base"
 
 try:
 	with tarfile.open(server_browser_fix_out_path, "r:gz") as t:
-		t.extractall(source_sdk_base_2006_path)
+		t.extractall(source_sdk_base_2006_path, filter="fully_trusted")
 except Exception as e:
 	input(f"ERROR: Failed to extract server browser fix to {source_sdk_base_2006_path}\n{e}")
 	exit(1)
@@ -94,4 +97,8 @@ except: pass
 try: os.remove(server_browser_fix_out_path)
 except: pass
 
-show_message_box("Restart Steam to complete installation, then use 'GHSLauncher.exe' (on your Desktop)", "Success!")
+for p in psutil.process_iter(['name']):
+	if p.name() == "steam.exe":
+		p.kill()
+
+show_message_box("Use 'GHSLauncher.exe' (on your Desktop) to launch the game", "Success!")
