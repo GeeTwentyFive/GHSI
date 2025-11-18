@@ -1,6 +1,7 @@
 GHSInstaller (Gee's Hidden Source Installer) is a program which installs a modified version of Hidden: Source.
 
 The modifications:
+- Game not launching fix
 - Optimized graphical settings for seeing the Hidden
 - Optimized network settings for responsiveness, consistency, physkilling, and other tricks involving props
 - Includes many community maps
@@ -16,7 +17,7 @@ The modifications:
 - Increased sonic trip alarm count (1 -> 4)
 - Removed broken maps which crash game
 - Unofficial community Discord link in MOTD
-- Dedicated server plugins: RTV, nominations, mapchooser, phys crash fix, pigshove, +visible, black hidden checker, BSOD fix, weight reporter
+- Dedicated server plugins: RTV, nominations, mapchooser, phys crash fix, pigshove, +visible, black hidden checker, BSOD fix, weight reporter, autobot
 
 
 # Usage
