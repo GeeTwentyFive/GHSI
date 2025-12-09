@@ -26,10 +26,17 @@ def registry_get_string_from_key(root: winreg.HKEYType, path: str, name: str):
 	return value[0]
 
 
-# Install Source SDK Base 2006
+# Install Source SDK Base 2006 if not already installed
 
-steamapp_installer.install(215, "Source SDK Base") # TEMP; TEST
-show_message_box("Installing 'Source SDK Base 2006' on Steam...\n\nPRESS 'OK' ONLY *AFTER* IT IS ALREADY INSTALLED")
+if not os.path.isfile(
+	registry_get_string_from_key(
+		winreg.HKEY_CURRENT_USER,
+		"Software\\Valve\\Steam",
+		"SteamPath"
+	) + "\\steamapps\\appmanifest_215.acf"
+):
+	steamapp_installer.install(215, "Source SDK Base")
+	show_message_box("Installing 'Source SDK Base 2006' on Steam...\n\nPRESS 'OK' ONLY *AFTER* IT IS ALREADY INSTALLED")
 
 
 # Install Hidden: Source - Enhanced Edition
@@ -57,13 +64,6 @@ except Exception as e:
 	input(f"ERROR: Failed to extract Hidden: Source - Enhanced Edition to {sourcemods_path}\n{e}")
 	exit(1)
 
-try:
-	with open(os.path.join(os.getenv("userprofile"), "Desktop\\GHSLauncher.exe"), "wb") as f:
-		f.write(base64.b64decode(GAME_LAUNCHER_DATA))
-except Exception as e:
-	input(f"ERROR: Failed to write GHSLauncher.exe to Desktop\n{e}")
-	exit(1)
-
 
 # Patch Source SDK Base 2006 server browser
 
@@ -89,6 +89,18 @@ try:
 		t.extractall(source_sdk_base_2006_path, filter="fully_trusted")
 except Exception as e:
 	input(f"ERROR: Failed to extract server browser fix to {source_sdk_base_2006_path}\n{e}")
+	exit(1)
+
+
+# Install GHSLauncher
+
+print("Installing launcher...")
+
+try:
+	with open(os.path.expanduser("~\\Desktop\\GHSLauncher.exe"), "wb") as f:
+		f.write(base64.b64decode(GAME_LAUNCHER_DATA))
+except Exception as e:
+	input(f"ERROR: Failed to write GHSLauncher.exe to Desktop\n{e}")
 	exit(1)
 
 

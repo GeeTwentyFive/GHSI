@@ -1,4 +1,4 @@
-GHSInstaller (Gee's Hidden Source Installer) is a program which installs a modified version of Hidden: Source.
+GHSInstaller (Gee's Hidden: Source Installer) is a program which installs a modified version of Hidden: Source and a [launcher](https://github.com/GeeTwentyFive/GHSLauncher)
 
 The modifications:
 - Game not launching fix
@@ -23,7 +23,7 @@ The modifications:
 # Usage
 Run `GHSInstaller.exe` -> after install: Launch with `GHSLauncher.exe` on Desktop
 
-For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLauncher.exe`
+For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLauncher.exe` ([source](https://github.com/GeeTwentyFive/GHSServerLauncher))
 
 
 # Contributors
