@@ -26,6 +26,11 @@ Run `GHSInstaller.exe` -> after install: Launch with `GHSLauncher.exe` on Deskto
 For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLauncher.exe` ([source](https://github.com/GeeTwentyFive/GHSServerLauncher))
 
 
+# Dependencies
+
+`pywin32`
+
+
 # Gamma's Dedicated Server Setup & Quick Start Guide
 
 - Download "HiddenServer.7z" from the releases page. Because it comes in a compressed archive, you will need 7-Zip or WinRAR to extract it.

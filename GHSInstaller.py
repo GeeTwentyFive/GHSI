@@ -6,6 +6,7 @@ import base64
 import tarfile
 import os
 import psutil
+from win32com.shell import shell, shellcon
 
 
 from src._GAME_FILES_COMPRESSED_DATA import GAME_FILES_COMPRESSED_DATA
@@ -97,7 +98,7 @@ except Exception as e:
 print("Installing launcher...")
 
 try:
-	with open(os.path.expanduser("~\\Desktop\\GHSLauncher.exe"), "wb") as f:
+	with open(os.path.join(shell.SHGetFolderPath(0, shellcon.CSIDL_DESKTOP, None, 0), "GHSLauncher.exe"), "wb") as f:
 		f.write(base64.b64decode(GAME_LAUNCHER_DATA))
 except Exception as e:
 	input(f"ERROR: Failed to write GHSLauncher.exe to Desktop\n{e}")
