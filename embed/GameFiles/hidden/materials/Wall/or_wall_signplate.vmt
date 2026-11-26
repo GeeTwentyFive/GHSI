@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/or_wall_signplate"
+	"$surfaceprop" "metal"
+}

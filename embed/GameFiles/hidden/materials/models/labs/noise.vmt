@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+ 	"$model" 1
+	"$surfaceprop" "glass"
+	"$basetexture" "Models/labs/noise"
+}

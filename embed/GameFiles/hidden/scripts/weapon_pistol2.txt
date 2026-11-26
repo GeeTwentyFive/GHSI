@@ -1,0 +1,88 @@
+WeaponData
+{
+	// Weapon characteristics:
+	"Damage"			"16"		// damage per bullet
+	"Bullets"			"1"		// bullets per shoot
+	"CycleTime"			"0.25"		// time between shoots
+	
+	
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"#HDN_FNP9"
+	"viewmodel"			"models/weapons/fnp9/v_fnp9.mdl"
+	"playermodel"			"models/weapons/fnp9/w_fnp9.mdl"
+	"clipmodel"			"models/generic/jimmy.mdl"
+
+	"PlayerAnimationExtension"	"pistol"
+	
+	"anim_prefix"			"anim"
+	"bucket"			"1"
+	"bucket_position"		"0"
+
+	"clip_size"			"16"
+	
+	"primary_ammo"			"AMMO_9MM"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	"BuiltRightHanded" 		"1"
+	"AllowFlipping" 		"1" 
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		//"reload"			"Default.Reload"
+		"empty"				"Default.ClipEmpty_Pistol"
+		"single_shot"			"Weapon_FNP9.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"c"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"c"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"h"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/hdn_crosshairs"
+				"x"		"0"
+				"y"		"0"
+				"width"		"0"
+				"height"	"0"
+		}
+		"autoaim"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"0"
+				"height"	"0"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -4 -13"
+			Maxs	"21 9 -1"
+		}
+		World
+		{
+			Mins	"-10 -7 -6"
+			Maxs	"22 8 9"
+		}
+	}
+}

@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/executive/hr_model_advert05"
+	 $model 1
+	"$surfaceprop" "weapon"
+}

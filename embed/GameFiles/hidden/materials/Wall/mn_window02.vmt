@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Wall/mn_window02"
+	"$surfaceprop" "glass"
+//	"$bumpmap" "Wall/mn_window02_normal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "Wall/mn_window02_spec"
+	"$selfillum" "1"
+	"$envmaptint" "[.9 .9 .9]"
+}

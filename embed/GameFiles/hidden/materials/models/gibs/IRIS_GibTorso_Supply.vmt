@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\gibs\IRIS_GibTorso_Supply"
+	"$model" 1
+	"$surfaceprop" "flesh"
+	"$bumpmap" "models\gibs\IRIS_GibTorso_Normal"
+	"$envmap" "env_cubemap"
+	"$envtint" "[.2 .2 .2]"
+	"$normalmapalphaenvmapmask" 1
+}

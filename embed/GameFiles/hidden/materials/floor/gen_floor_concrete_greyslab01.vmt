@@ -1,0 +1,9 @@
+"lightmappedgeneric"
+{
+	"$basetexture" "floor/gen_floor_concrete_greyslab01"
+
+	"$detail" "detail/detail_floor_asphalt01"
+	"$detailscale" 4
+
+	"$surfaceprop" "concrete"
+}

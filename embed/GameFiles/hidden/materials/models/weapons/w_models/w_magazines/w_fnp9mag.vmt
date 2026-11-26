@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/weapons/w_models/w_magazines/w_fnp9mag"
+	 $model 1
+	"$surfaceprop" "metal"
+
+}

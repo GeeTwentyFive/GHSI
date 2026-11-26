@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Wall/mn_wall_wood_mahoganypanel01"
+	"$surfaceprop" "wood"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "Wall/mn_wall_wood_mahoganypanel01_spec"
+	"$envmaptint" "[.5 .5 .5]"
+}

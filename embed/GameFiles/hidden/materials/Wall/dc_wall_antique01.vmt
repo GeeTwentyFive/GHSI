@@ -1,0 +1,6 @@
+"lightmappedgeneric"
+{
+	"$baseTexture" "wall/dc_wall_antique01"
+	"$surfaceprop" "tile"
+	"$bumpmap" "wall/dc_wall_antique01_normal"
+}

@@ -1,0 +1,23 @@
+"Refract"
+{
+	"$model" 1
+
+	"Refract_DX90"
+		{
+			"$refractamount" "0.02"
+		}
+
+	"Refract_DX60"
+		{
+		"$fallbackmaterial" "models/manor/hr_model_teaurn_earlgrey_dx7"
+		}
+	
+	"$normalmap" "models/executive/HR_Model_Teaurn_Earlgrey"
+	"$bumpmap" "models/executive/HR_Model_Teaurn_Earlgrey"
+	"$dudvmap" "models/executive/HR_Model_Teaurn_Earlgrey_dudv"
+	"$refractamount" "0.004"
+	"$surfaceprop"   "flesh"
+	"$alpha"         "1"
+	"$translucent"   "1"
+	"$forcerefract"  "1"
+}

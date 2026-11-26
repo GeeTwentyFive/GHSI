@@ -1,0 +1,74 @@
+// Crowbar
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"			"#HDN_KABAR"
+	"viewmodel"			"models/weapons/kabar/v_kabar.mdl"
+	"playermodel"			"models/weapons/kabar/w_kabar.mdl"
+	"PlayerAnimationExtension"	"knife"
+	"anim_prefix"			"anim"
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_size"				"-1"
+	"primary_ammo"			"None"
+	"secondary_ammo"		"None"
+
+	"weight"			"20"
+	"item_flags"			"0"
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"		"Weapon_Knife.Slash"
+		"single_shot"		"Weapon_Knife.Stab"
+		"special1"		"Weapon_Knife.Pigstick"
+		"melee_hit"		"Weapon_Knife.Hit"
+		"melee_hit_world"	"Weapon_Knife.HitWall"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"a"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"a"
+		}
+		"ammo2"
+		{
+			"file"		"sprites/640hud7"
+			"x"			"48"
+			"y"			"72"
+			"width"		"24"
+			"height"	"24"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/hdn_crosshairs"
+				"x"		"0"
+				"y"		"64"
+				"width"		"64"
+				"height"	"64"
+		}
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"			"0"
+			"y"			"48"
+			"width"		"24"
+			"height"	"24"
+		}
+	}
+}

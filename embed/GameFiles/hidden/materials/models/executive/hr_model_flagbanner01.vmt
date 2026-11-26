@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "/Models/Executive/HR_Model_FlagBanner01"
+	"$nocull" 1
+	 $model 1
+}

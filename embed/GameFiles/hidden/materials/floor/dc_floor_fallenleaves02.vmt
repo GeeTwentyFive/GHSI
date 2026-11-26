@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "floor/dc_floor_fallenleaves02"
+	"$decal" 1
+	"$decalscale" 0.5
+}

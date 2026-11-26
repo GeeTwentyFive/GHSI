@@ -1,0 +1,16 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/hud/hdn_rec"
+	"$Translucent" 1
+	"$ignorez"	"1"
+
+"Proxies"{
+		"Sine" 
+            	{ 
+                   "resultVar"    "$alpha" 
+                   "sineperiod"   3
+                   "sinemin"      0.01
+                   "sinemax"      1
+            	}
+	}
+}

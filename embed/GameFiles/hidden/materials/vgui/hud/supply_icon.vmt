@@ -1,0 +1,17 @@
+"UnlitGeneric" 
+{
+	"$translucent" "1"
+	"$basetexture" "vgui/hud/supply_icon" 
+	"$ignorez"	0
+	"$vertexcolor"  1
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedtexturevar" "$basetexture" 
+			"animatedtextureframenumvar" "$frame"
+			"animatedtextureframerate" 8.00
+		}
+	}
+} 

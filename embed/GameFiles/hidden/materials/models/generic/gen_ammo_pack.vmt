@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/generic/gen_ammo_pack"
+	"$model" 1
+	"$surfaceprop" "cloth"
+}

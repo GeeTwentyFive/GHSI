@@ -1,0 +1,126 @@
+//-------------------------------------------------------------------------
+//
+// Hidden Game Data
+//
+//-------------------------------------------------------------------------
+
+@include "Base.fgd"
+@BaseClass color(0 255 0) = PlayerClass []
+@BaseClass color(255 0 0) = PlayerClip []
+
+//-------------------------------------------------------------------------
+//
+// Camera/monitor entities
+//
+//-------------------------------------------------------------------------
+@PointClass base(Parentname, Angles) studioprop("models/editor/camera.mdl") = point_camera : "Camera"
+[
+	spawnflags(Flags) =
+	[
+		1 : "Start Off" : 0 
+	]
+
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	FOV(float) : "FOV" : 90 : "Field of view in degrees"
+//	resolution(float) : "resolution" : 256 : "width/height of the render target for the camera"
+	UseScreenAspectRatio(choices) : "Screen Aspect Ratio" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]	
+	fogEnable(choices) : "Fog Enable" : 0 =
+	[
+		0 : "No"
+		1 : "Yes"
+	]	
+	fogColor(color255) : "Fog Color" : "0 0 0"
+	fogStart(float) : "Fog Start" : 2048 : "The near fog plane."
+	fogEnd(float) : "Fog End" : 4096 : "The far fog/clipping plane."
+
+	// Inputs
+	input ChangeFOV(string) : "Changes camera's FOV over time"
+	input SetOnAndTurnOthersOff(void) : "Turn the camera on, and turn all other cameras off."
+	input SetOn(void) : "Turn the camera on."
+	input SetOff(void) : "Turn the camera off."
+]
+
+@SolidClass base(func_brush) = func_monitor :
+	"A monitor that renders the view from a given point_camera entity."
+[
+	target(target_destination) : "Camera name"
+	
+	// Inputs
+	input Toggle(void) : "Toggle - If on, turn off, if off, turn on."
+	input Enable(void) : "Enable."
+	input Disable(void) : "Disable."
+	input SetCamera(string) : "Sets the camera to use for this monitor. Takes the name of a point_camera entity in the map."
+]
+
+@BaseClass = Angles
+[ 
+	angles(angle) : "Pitch Yaw Roll (Y Z X)" : "0 0 0" : "This entity's orientation in the world. Pitch is rotation around the Y axis, " +
+		"yaw is the rotation around the Z axis, roll is the rotation around the X axis."
+]
+
+@PointClass base(PlayerClass, Angles) studio("models/editor/playerstart.mdl") = info_hidden_spawn :
+	"This entity indicates the position and facing direction at which the player will spawn. Any number of "+
+	"info_player_start entities may be placed in a map for when working in cordoned-off portions of the map. "+
+	"When multiple info_player_start entities are present in a map, set the 'Master' spawnflag on one of them "+
+	"to indicate which one should be used when running the entire map."
+[
+	spawnflags(flags) =
+	[
+		1: "Master (Has priority if multiple info_hidden_spawns exist)" : 0
+	]
+]
+
+@PointClass base(PlayerClass, Angles) studio("models/editor/playerstart.mdl") = info_marine_spawn :
+	"This entity indicates the position and facing direction at which the player will spawn. Any number of "+
+	"info_player_start entities may be placed in a map for when working in cordoned-off portions of the map. "+
+	"When multiple info_player_start entities are present in a map, set the 'Master' spawnflag on one of them "+
+	"to indicate which one should be used when running the entire map."
+[
+	spawnflags(flags) =
+	[
+		1: "Master (Has priority if multiple info_marine_spawns exist)" : 0
+	]
+]
+
+@PointClass base(Angles) studio("models/generic/gen_model_spec_camera.mdl") = info_spectator : 
+	"This is used to specify spectator camera positions throughout a map" +
+	"Set the angles and FOV, match the location to a nearby location brush."
+[
+	fov(float) : "Camera FOV" : 90
+	location(string) : "Location" : "Front Yard"
+]
+
+@PointClass base(Angles) studio("models/generic/iris_ammobox.mdl") = hdn_ammocrate : 
+	"This is used to specify spectator camera positions throughout a map" +
+	"Set the angles and FOV, match the location to a nearby location brush."
+[
+
+]
+
+@SolidClass base(PlayerClip) = marine_clip : "Brush which lets everything through except marines"[]
+
+@SolidClass base(PlayerClip) = location_brush : 
+	"This is used to give certain section of the level names which is relayed to the players in game. "+
+	"It is also used when selecting the speak commands as this will also include this information to "+
+	"help other players locate the hidden. The names have been hardcoded to be a length no greater than "+
+	"25 characters."
+[
+	location(string) : "Location's Name" : "Front Yard" : "Location Brush name dictated by the mapper"
+]
+
+@SolidClass base(PlayerClip) = extraction_point : "Extraction Point Brush"
+[
+	time(float) : "Time" : "45" : "Time till extraction"
+	percentage(float) : "Percentage Alive" : "30" : "The percentage of alive marines to trigger the extraction"
+	failure_message(string) : "Failure Message" : "Task Incomplete" : "Message displayed if task not complete"
+	
+	is_visible(choices) : "Is the brush Visible (testing purpose only)" : "0" =
+	[
+    		0 : "false" 
+   		1 : "true" 
+	]
+]

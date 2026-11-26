@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\labs\lb_crate01"
+	 $model 1
+	"$surfaceprop" "metal"
+	"$bumpmap" "Models\labs\lb_crate01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envtint" "[.2 .2 .2]"
+}

@@ -1,0 +1,49 @@
+"soundscapes.origin_corridor"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/underground_hall_loop1.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor2.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "25,35"
+      "volume"       "0.4,0.8"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/materials/creaking.wav"
+           "wave"   "ambient/explosions/exp2.wav"
+           "wave"   "npc/env_headcrabcanister/explosion.wav"
+           "wave"   "ambient/materials/rock5.wav"
+        } 
+      }
+
+     "playrandom"
+     {
+      "time"         "10,20"
+      "volume"       "0.4,0.8"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/levels/streetwar/building_rubble1.wav"
+           "wave"   "ambient/levels/streetwar/building_rubble2.wav"
+           "wave"   "ambient/levels/streetwar/building_rubble3.wav"
+           "wave"   "ambient/levels/streetwar/building_rubble4.wav"
+           "wave"   "ambient/levels/streetwar/building_rubble5.wav"
+           "wave"   "ambient/levels/streetwar/building_rubble1.wav"
+        } 
+      }
+}
+

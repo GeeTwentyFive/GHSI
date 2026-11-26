@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/gen_wall_brick_cream_dirty01"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "wall/gen_wall_brick_cream02_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.3 .3 .3]"
+}

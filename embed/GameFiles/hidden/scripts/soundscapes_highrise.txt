@@ -1,0 +1,89 @@
+"soundscapes.highrise_exterior"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/trainstation_ambient_loop1.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/city_tone.wav"
+     }
+
+     "playrandom"
+     {
+      "time"         "60,120"
+      "volume"       "0.1,0.2"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/machines/heli_pass_distant1.wav"
+           "wave"   "ambient/machines/heli_pass_quick1.wav"
+           "wave"   "ambient/levels/coast/antlion_hill_ambient1.wav"
+
+        }
+      }
+     "playrandom"
+     {
+      "time"         "45,115"
+      "volume"       "0.1,0.2"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/machines/truck_pass_overhead1.wav"
+        }
+      }
+} 
+
+ "soundscapes.highrise_interior"
+{
+    "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/indoor2.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "30,60"
+      "volume"       "0.1,0.3"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/wind/wind_med1.wav"
+           "wave"   "ambient/wind/wind_med2.wav"
+           "wave"   "ambient/wind/wind_snippet1.wav"
+        } 
+      }
+
+
+	"playrandom"
+     {
+      "time"         "20,40"
+      "volume"       "0.1,0.6"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/water/distant_drip1.wav"
+           "wave"   "ambient/water/distant_drip2.wav"
+           "wave"   "ambient/water/distant_drip3.wav"
+           "wave"   "ambient/water/distant_drip4.wav"
+	   "wave"   "ambient/materials/rustypipes2.wav"
+        } 
+      }
+}

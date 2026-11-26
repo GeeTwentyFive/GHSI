@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/or_wall_crosshatch"
+	"$detail" "detail/detail_floor_metal01"
+	"$detailscale" 4
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "wall/or_wall_crosshatch_spec"
+	"$envmapcontrast" 1
+	"$envmaptint" "[.9 .9 .9]"
+}

@@ -1,0 +1,7 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/shells/57/shell_57"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/shells/57/shell_spec"
+	"$envmaptint" "[.5 .5 .5]"
+}

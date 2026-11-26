@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/labs/lb_arch"
+	"$model" 1
+	"$selfillum" 1
+	"$surfaceprop" "metal"
+	"$bumpmap" "Models/labs/lb_arch_normal"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.5 .5 .5]"
+}
+
+
+
+
+

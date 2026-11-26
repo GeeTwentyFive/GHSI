@@ -1,0 +1,22 @@
+"UnlitTwoTexture"
+{
+ 	"$model" 1
+	"$selfillum" 1
+	"$surfaceprop" "glass"
+	"$baseTexture" "Models/labs/lb_moninfo2"
+	"$texture2"	"Models/labs/noise"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.95 .95 .95]"
+
+"Proxies"{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 4
+			"texturescrollangle" "70"
+            	}
+		
+	}
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\manor\mn_pillarbutress"
+	 $model 1
+	"$surfaceprop" "concrete"
+//	"$bumpmap" "Models\manor\mn_pillarbutress_normal"
+}

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\manor\mn_clockface"
+	 $model 1
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[1 1 1]"	
+}

@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/manor/mn_light_fixtures"
+	"$bumpmap" "Models/manor/mn_light_fixtures_normal"
+	 $model 1
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.8 .8 .8]"	
+}

@@ -1,4 +1,4 @@
-GHSInstaller (Gee's Hidden: Source Installer) is a program which installs a modified version of Hidden: Source and a [launcher](https://github.com/GeeTwentyFive/GHSLauncher)
+GHSInstaller (Gee's Hidden: Source Installer) is a program which installs a modified version of Hidden: Source (and a [launcher](https://github.com/GeeTwentyFive/GHSLauncher) for Windows) for Windows / Linux+Proton
 
 The modifications:
 - Game not launching fix
@@ -10,7 +10,6 @@ The modifications:
 - Sonic trip alarm sound fix
 - Master server list fix
 - Fixed worse recoil with higher ping
-- Automatic (attempted) port forwarding (27015)
 - Borderless window fix for alt-tabbing
 - Shotgun damage nerf (17x9 -> 11x9)
 - Increased FN303 (best weapon) clip size (15 -> 20)
@@ -18,25 +17,24 @@ The modifications:
 - Removed broken maps which crash game
 - Unofficial community Discord link in MOTD
 - Dedicated server plugins: RTV, nominations, mapchooser, phys crash fix, pigshove, +visible, black hidden checker, BSOD fix, weight reporter, autobot
+- Various bug fixes
 
 
 # Usage
-Run `GHSInstaller.exe` -> after install: Launch with `GHSLauncher.exe` on Desktop
 
-For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLauncher.exe` ([source](https://github.com/GeeTwentyFive/GHSServerLauncher))
+Run `GHSInstaller`
 
+For dedicated server: Download `HiddenServer.zip` -> extract -> run `RUN.bat`
 
-# Dependencies
-
-`pywin32`
+(if stuff is brokey, see [Troubleshooting](#troubleshooting) section below)
 
 
 # Gamma's Dedicated Server Setup & Quick Start Guide
 
-- Download "HiddenServer.7z" from the releases page. Because it comes in a compressed archive, you will need 7-Zip or WinRAR to extract it.
+- Download "HiddenServer.zip" from the releases page.
 
 - Create a new folder for the server. This folder can be put anywhere and named what you like.
-  Once the folder is made, extract the files inside "HiddenServer.7z" to your new folder.
+  Once the folder is made, extract the files inside "HiddenServer.zip" to your new folder.
 
 - Before you launch the server straight away, you should look at the server config.
   Find "server.cfg", at ServerFiles > hidden > cfg.
@@ -48,11 +46,11 @@ For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLau
   You can find most Hidden plugins here - https://www.sourcemod.net/plugins.php?cat=0&mod=15&title=&author=&description=&search=1
   Take note that some plugins have their own cvars you can add to the server config.
 
-- To start the server up and play, open GHSServerLauncher. It'll give you the usual SRCDS user interface.
+- To start the server up and play, run `RUN.bat`. It'll give you the usual SRCDS user interface.
   Don't bother with changing the server name or password in the GUI; the server config will overwrite it.
   Remember to change the RCON Password while you're there.
 
-- If, for some reason, the GUI crashes upon starting the server, use "RUN_AS_CONSOLE".
+- If, for some reason, the GUI crashes upon starting the server, use `RUN_AS_CONSOLE.bat`.
   This will give you a simple console to run the server from.
   If you want to adjust starting maps, you can edit the batch file in a text editor.
   The following is some useful arguments to know.
@@ -64,7 +62,27 @@ For dedicated server: Download `HiddenServer.7z` -> extract -> run `GHSServerLau
   You can also apply arguments to the GUI by copy-pasting the batch file and removing "-console".
 
 
+# Troubleshooting
+
+- Installer no workie
+  - See [Manual install](#manual-install) section below
+
+- Crash during loading screen
+  - Make sure you have a default audio playback device selected in Windows settings
+
+
+# Manual install
+
+1) Install `Source SDK Base 2006` on Steam
+2) Download/clone repo (On GitHub: Green `Code` button -> `Download ZIP`)
+3) Move *contents* of `embed/SourceSDKBase2006_Patches/` to `<STEAM_INSTALL_DIR>/steamapps/common/Source SDK Base/`
+4) Move *contents* of `embed/GameFiles/` to `<STEAM_INSTALL_DIR>/steamapps/sourcemods/`
+5) If on Windows: Copy `embed/GHSLauncher.exe` to Desktop (use this to launch game on Windows (has Windows-specific fixes))
+6) Restart Steam
+
+
 # Contributors
+
 - Gamma (shygamma)
 
 

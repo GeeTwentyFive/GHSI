@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+		
+	"$baseTexture" "models\player\irgogz"
+	"$envmapmask"  "models\player\irgogz_mask"
+	"$envmap" "env_cubemap"	
+	"$envmapcontrast" 1
+	"$surfaceprop" "flesh"
+	"$selfillum" 1
+	"$model" 1
+
+	//"$additive" "1"
+	//"$basemapalphaenvmapmask" 1
+	//"$envmaptint" "[0.3 0.3 0.3]"
+	
+}

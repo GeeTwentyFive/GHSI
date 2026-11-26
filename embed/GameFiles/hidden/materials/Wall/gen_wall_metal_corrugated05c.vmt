@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/gen_wall_metal_corrugated05c"
+	"$detail" "detail/detail_floor_metal02"
+	"$detailscale" 4
+	"$surfaceprop" "metal"
+	"$bumpmap" "wall/gen_wall_metal_corrugated01c_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.5 .5 .5]"
+}

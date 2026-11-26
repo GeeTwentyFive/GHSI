@@ -1,0 +1,46 @@
+ "soundscapes.decay_interior"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/wind/wind_tunnel1.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.3"
+        "pitch"  "100"
+        "wave"   "ambient/wind/wasteland_wind.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "5,20"
+      "volume"       "0.7,0.9"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/atmosphere/thunder1.wav"
+           "wave"   "ambient/atmosphere/thunder2.wav"
+           "wave"   "ambient/atmosphere/thunder3.wav"
+           "wave"   "ambient/atmosphere/thunder4.wav"
+        } 
+      }
+
+     "playrandom"
+     {
+      "time"         "20,40"
+      "volume"       "0.3,0.4"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/materials/wood_creak1.wav"
+           "wave"   "ambient/materials/wood_creak2.wav"
+           "wave"   "ambient/materials/wood_creak3.wav"
+           "wave"   "ambient/materials/wood_creak4.wav"
+        } 
+      }
+}

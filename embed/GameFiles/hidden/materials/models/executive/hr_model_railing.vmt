@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "/Models/Executive/HR_Model_Railing"
+	 $model 1
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.9 .9 .9]"
+
+}

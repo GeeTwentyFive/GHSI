@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+{
+	"$basetexture"  "skybox/sky_clouds"
+	"$translucent"  "1"
+
+	"Proxies" 
+     		{    
+			"TextureScroll"
+				{
+				"texturescrollvar" "$basetexturetransform"
+				"texturescrollrate" 0.05
+				"texturescrollangle" "65"
+            		}
+	   	}
+}

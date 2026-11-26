@@ -1,0 +1,92 @@
+// Crossbow
+
+WeaponData
+{
+	// Weapon data is loaded by both the Game and Client DLLs.
+	"printname"		"#HL2_Crossbow"
+	"viewmodel"			"models/weapons/fn303/v_fn303.mdl"
+	"playermodel"			"models/weapons/fn303/w_fn303.mdl"
+	"clipmodel"			"models/generic/jimmy.mdl"
+
+	"PlayerAnimationExtension"	"aug"
+
+	"bucket"			"0"
+	"bucket_position"		"0"
+
+	"clip_amount"			"3"
+	"clip_size"			"20"
+
+	"primary_ammo"			"XBowBolt"
+	"secondary_ammo"		"None"
+
+	"weight"			"25"
+	"item_flags"			"0"
+
+	"BuiltRightHanded" 		"1"
+	"AllowFlipping" 		"1" 
+
+	// Sounds for the weapon. There is a max of 16 sounds per category (i.e. max 16 "single_shot" sounds)
+	SoundData
+	{
+		"single_shot"	"Weapon_FN303.Single"
+	}
+
+	// Weapon Sprite data is loaded by the Client DLL.
+	TextureData
+	{
+		"weapon"
+		{
+				"font"		"WeaponIcons"
+				"character"	"g"
+		}
+		"weapon_s"
+		{	
+				"font"		"WeaponIconsSelected"
+				"character"	"g"
+		}
+		"ammo"
+		{
+				"font"		"WeaponIcons"
+				"character"	"w"
+		}
+		"crosshair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}		
+		"autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"		"0"
+			"y"		"96"
+			"width"		"24"
+			"height"	"24"
+		}
+		"zoom"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+		}		
+		"zoom_autoaim"
+		{
+			"file"		"sprites/crosshairs"
+			"x"		"24"
+			"y"		"112"
+			"width"		"104"
+			"height"	"16"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-10 -4 -13"
+			Maxs	"21 9 -1"
+		}
+		World
+		{
+			Mins	"-10 -7 -6"
+			Maxs	"22 8 9"
+		}
+	}
+}

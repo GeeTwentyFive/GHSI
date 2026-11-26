@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/manor\mn_bookcase"
+	"$model" 1
+	"$surfaceprop" "wood"
+	"$bumpmap" "Models/manor\mn_bookcase_normal"
+}

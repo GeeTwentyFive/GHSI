@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/gen_wall_stone_damptrim01"
+	"$surfaceprop" "concrete"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "wall/gen_wall_stone_damptrim01_spec"
+	"$envmapcontrast" 1
+	"$envmaptint" "[.5 .5 .5]"
+}

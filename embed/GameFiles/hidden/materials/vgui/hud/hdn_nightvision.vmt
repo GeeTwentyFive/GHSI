@@ -1,0 +1,15 @@
+"HDN_Nightvision"
+{
+ 	"$model" 1
+	"$noisetexture" "vgui/hud/hdn_cam_noise"
+
+"Proxies"{
+	
+		"TextureScroll"
+		{
+			"texturescrollvar" "$uvoffset"
+			"texturescrollrate" 8
+			"texturescrollangle" 90
+          	}
+	   }
+}

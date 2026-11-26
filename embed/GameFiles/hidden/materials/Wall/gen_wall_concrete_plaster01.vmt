@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/gen_wall_concrete_plaster01"
+	"$surfaceprop" "plaster"
+	"$detail" "detail/detail_floor_asphalt02"
+	"$detailscale" 4
+}

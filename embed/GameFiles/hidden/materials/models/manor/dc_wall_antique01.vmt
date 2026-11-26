@@ -1,0 +1,7 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "wall/dc_wall_antique01"
+	"$model" 1
+	"$surfaceprop" "concrete"
+	"$bumpmap" "wall/dc_wall_antique01_normal"
+}

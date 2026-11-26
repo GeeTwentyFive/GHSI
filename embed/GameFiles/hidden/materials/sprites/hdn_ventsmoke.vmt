@@ -1,0 +1,27 @@
+"UnlitGeneric"
+{
+	"$spriteorientation" "vp_parallel"
+	"$spriteorigin" "[ 0.25 0.25 ]"
+	"$basetexture"  "sprites/hdn_ventsmoke"
+	"$additive"     "1"
+	"$vertexalpha"  "1"
+	"$vertexcolor"  "1"
+	"$angle" "1"
+
+	"Proxies" 
+     		{ 
+            	"Sine" 
+            	{ 
+			"resultVar"    "$angle" 
+			"sineperiod"   40 
+                  "sinemin"      -175
+			"sinemax"      255
+     			} 
+		
+		      "TextureTransform"
+      		{
+		      "rotateVar" "$angle"
+		      "resultVar" "$basetexturetransform"
+     			}
+		}
+}

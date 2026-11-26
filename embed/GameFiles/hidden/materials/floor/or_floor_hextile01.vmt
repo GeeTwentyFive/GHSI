@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/or_floor_hextile01"
+	"$surfaceprop" "metal"
+	"$bumpmap" "floor/or_floor_hextile01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1	
+	"$envmaptint" "[.3 .3 .3]"
+}

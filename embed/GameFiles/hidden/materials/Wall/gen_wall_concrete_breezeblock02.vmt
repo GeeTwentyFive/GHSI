@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/gen_wall_concrete_breezeblock02"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "wall/gen_wall_concrete_breezeblock01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 0
+	"$envmaptint" "[.1 .1 .1]"
+}

@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/manor/mn_frame"
+	"$bumpmap" "models/manor/mn_frame_normal"
+	 $model 1
+	"$surfaceprop" "wood"	
+}

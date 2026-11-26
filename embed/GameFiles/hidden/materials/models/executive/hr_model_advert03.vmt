@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Executive/HR_Model_Advert03"
+	 $model 1
+	"$surfaceprop" "glass"
+	"$bumpmap" "Models/Executive/HR_Model_Advert01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[1 1 1]"
+}

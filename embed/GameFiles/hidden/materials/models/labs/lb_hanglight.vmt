@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/labs/lb_hanglight"
+	"$selfillum" 1
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "models/labs/lb_hanglight_spec"
+	"$envmaptint" "[.7 .7 .7]"
+}

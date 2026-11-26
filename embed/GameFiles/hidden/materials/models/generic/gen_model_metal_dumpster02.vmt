@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\generic\gen_model_metal_dumpster02"
+	"$model" 1
+	"$surfaceprop" "metal"
+}

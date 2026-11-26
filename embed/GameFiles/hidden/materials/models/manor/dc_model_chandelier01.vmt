@@ -1,0 +1,9 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\manor\dc_model_chandelier01"
+	 $model 1
+	"$surfaceprop" "metal"
+	"$bumpmap" "Models\manor\dc_model_chandelier01_normal"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.8 .8 .8]"
+}

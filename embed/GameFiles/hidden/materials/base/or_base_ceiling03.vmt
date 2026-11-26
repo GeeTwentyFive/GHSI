@@ -1,0 +1,11 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "base/or_base_ceiling03"
+	"$detail" "detail/detail_floor_metal01"
+	"$detailscale" 4
+	"$surfaceprop" "metal"	
+	"$envmap" "env_cubemap"
+	"$envmapmask" "base/or_base_ceiling03_spec"
+	"$envmapcontrast" 1
+	"$envmaptint" "[.7 .7 .7]"
+}

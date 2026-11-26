@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$model" 1
+	"$baseTexture" "floor/dc_floor_carpet_creampattern01"
+	"$surfaceprop" "carpet"
+}

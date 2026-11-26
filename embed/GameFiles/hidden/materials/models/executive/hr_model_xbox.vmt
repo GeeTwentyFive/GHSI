@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Executive/HR_Model_XBox"
+	 $model 1
+	"$surfaceprop" "metal"
+}

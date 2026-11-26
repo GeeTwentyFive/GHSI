@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/IRIS_HairE"
+	"$model" 1
+	"$surfaceprop" "flesh"
+	"$translucent" 1
+	
+	
+	
+	
+}

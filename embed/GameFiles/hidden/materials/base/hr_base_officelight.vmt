@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Base/HR_Base_OfficeLight"
+	"$surfaceprop" "metal"	
+	"$envmap" "env_cubemap"
+	"$envmapmask" "base/hr_base_officelight_spec"
+	"$envmapcontrast" 1
+	"$envmaptint" "[.3 .3 .3]"
+}

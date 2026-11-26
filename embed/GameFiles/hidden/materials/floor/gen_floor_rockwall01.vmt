@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "floor/gen_floor_rockwall01"
+	"$bumpmap" "floor/gen_floor_rockwall01_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$surfaceprop" "rock"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[ .1 .1 .3 ]"
+
+}

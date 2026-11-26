@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Base/HR_Base_Marble01"
+	"$surfaceprop" "tile"
+	"$bumpmap" "Base/HR_Base_Marble01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.3 .3 .3]"
+}

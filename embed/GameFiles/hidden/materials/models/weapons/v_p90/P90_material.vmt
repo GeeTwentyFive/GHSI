@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_p90\P90_Diffuse"
+	"$bumpmap" "models\weapons\v_p90\P90_Normal"
+	"$model" 1
+	"$envmap" "env_cubemap"
+	"$envtint" "[.7 .7 .7]"
+	"$selfillum" "1"
+	"$normalmapalphaenvmapmask" 1
+}

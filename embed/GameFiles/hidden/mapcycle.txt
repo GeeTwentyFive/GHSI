@@ -1,0 +1,13 @@
+hdn_decay
+hdn_derelict
+hdn_docks
+hdn_discovery
+hdn_executive
+hdn_highrise
+hdn_origin
+hdn_sewers
+hdn_stalkyard
+hdn_traindepot
+ovr_derelict
+ovr_decay
+ovr_docks

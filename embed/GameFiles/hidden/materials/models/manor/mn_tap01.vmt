@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/manor/mn_tap01"
+	"$bumpmap" "models/manor/mn_tap_normal"
+	 $model 1
+	$alphatest 1
+	"$surfaceprop" "plaster"
+}

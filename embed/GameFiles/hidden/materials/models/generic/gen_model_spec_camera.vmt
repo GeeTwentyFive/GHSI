@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\generic\gen_model_spec_camera"
+	"$model" 1
+	"$surfaceprop" "metal"
+}

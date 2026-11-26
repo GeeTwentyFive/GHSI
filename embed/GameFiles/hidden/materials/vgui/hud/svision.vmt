@@ -1,0 +1,7 @@
+"HDN_Desaturate"
+{
+	"$model" 1
+	"$basetexture" "vgui/hud/hdn_cam_noise"
+	"$interlacetex" "vgui/hud/hdn_cam_interlace"
+	"$saturation"	0.70
+}

@@ -1,0 +1,112 @@
+"soundscapes.stalkyard_exterior"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/wind/wasteland_wind.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/hole_amb3.wav"
+     }
+
+     "playrandom"
+     {
+      "time"         "60,120"
+      "volume"       "0.1,0.3"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/machines/heli_pass_distant1.wav"
+           "wave"   "ambient/machines/heli_pass_quick1.wav"
+        }
+      }
+     "playrandom"
+     {
+      "time"         "30,60"
+      "volume"       "0.2,0.4"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/levels/coast/antlion_hill_ambient4.wav"
+           "wave"   "ambient/levels/coast/antlion_hill_ambient2.wav"
+           "wave"   "ambient/levels/citadel/citadel_flyer1.wav"
+        }
+      }
+}
+ 
+ "soundscapes.stalkyard_corridor"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor2.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "20,40"
+      "volume"       "0.2,0.6"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/water/distant_drip1.wav"
+           "wave"   "ambient/water/distant_drip2.wav"
+           "wave"   "ambient/water/distant_drip3.wav"
+           "wave"   "ambient/water/distant_drip4.wav"
+           "wave"   "ambient/materials/rustypipes2.wav"
+           "wave"   "ambient/materials/rustypipes1.wav"
+        } 
+      }
+}
+
+ "soundscapes.stalkyard_crateroom"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/ambience6.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "20,40"
+      "volume"       "0.1,0.6"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/water/distant_drip1.wav"
+           "wave"   "ambient/water/distant_drip2.wav"
+           "wave"   "ambient/water/distant_drip3.wav"
+           "wave"   "ambient/water/distant_drip4.wav"
+	   "wave"   "ambient/materials/rustypipes2.wav"
+        } 
+      }
+}
+
+

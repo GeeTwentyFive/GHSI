@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\manor\tools"
+	 $model 1
+	"$surfaceprop" "metal"
+}

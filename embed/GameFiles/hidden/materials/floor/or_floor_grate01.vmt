@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/or_floor_grate01"
+	"$surfaceprop" "metal"
+	"$translucent" 1
+	"$envmaptint" "[.1 .1 .1]"
+}
+

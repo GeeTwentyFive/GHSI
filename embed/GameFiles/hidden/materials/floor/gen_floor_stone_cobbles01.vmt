@@ -1,0 +1,9 @@
+"lightmappedgeneric"
+{
+	"$basetexture" "floor/gen_floor_stone_cobbles01"
+	"$surfaceprop" "concrete"
+	"$bumpmap" "floor/gen_floor_stone_cobbles01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.1 .1 .1]"
+}

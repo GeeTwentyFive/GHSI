@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "wall/gen_wall_glasswindow01"
+	"$selfillum" 1
+	"$surfaceprop" "glass"
+}

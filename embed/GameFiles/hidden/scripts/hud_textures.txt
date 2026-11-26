@@ -1,0 +1,519 @@
+"sprites/640_hud"
+{
+	TextureData
+	{
+
+		"selection"
+		{
+				"file"		"sprites/640hud3"
+				"x"			"0"
+				"y"			"180"
+				"width"		"170"
+				"height"	"45"
+		}
+		"dmg_bio"
+		{
+				"file"		"sprites/d_icons"
+				"x"			"42"
+				"y"			"38"	
+				"width"		"42"
+				"height"	"38"
+		}
+		"dmg_poison"
+		{
+				"file"		"sprites/640hud8"
+				"x"			"128"
+				"y"			"0"
+				"width"		"64"
+				"height"	"64"
+		}
+		"dmg_chem"
+		{
+				"file"		"sprites/640hud8"
+				"x"			"0"
+				"y"			"0"
+				"width"		"64"
+				"height"	"64"
+		}
+		"dmg_cold"
+		{
+				"file"		"sprites/640hud9"
+				"x"			"64"
+				"y"			"0"
+				"width"		"64"
+				"height"	"64"
+		}
+		"dmg_drown"
+		{
+				"file"		"sprites/d_icons"
+				"x"			"42"
+				"y"			"0"
+				"width"		"42"
+				"height"	"38"
+		}
+		"dmg_heat"
+		{
+				"file"		"sprites/d_icons"
+				"x"			"0"
+				"y"			"0"
+				"width"		"42"
+				"height"	"38"
+		}
+		"dmg_gas"
+		{
+				"file"		"sprites/640hud9"
+				"x"			"0"
+				"y"			"0"
+				"width"		"64"
+				"height"	"64"
+		}
+		"dmg_rad"
+		{
+				"file"		"sprites/d_icons"
+				"x"			"0"
+				"y"			"38"
+				"width"		"42"
+				"height"	"38"
+		}
+		"dmg_shock"
+		{
+				"file"		"sprites/d_icons"
+				"x"			"84"
+				"y"			"0"
+				"width"		"42"
+				"height"	"38"
+		}
+		"arrow"
+		{
+				"file"		"sprites/arrow"
+				"x"			"0"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+		"ammo_label"
+		{
+				"file"		"sprites/hud1"
+				"x"			"120"
+				"y"			"28"
+				"width"		"40"
+				"height"	"14"
+		}
+		"health_label"
+		{
+				"file"		"sprites/hud1"
+				"x"			"160"
+				"y"			"28"
+				"width"		"50"
+				"height"	"14"
+		}
+		"battery_label"
+		{
+				"file"		"sprites/hud1"
+				"x"			"220"
+				"y"			"28"
+				"width"		"40"
+				"height"	"14"	
+		}
+		"train_back"
+		{
+				"file"		"sprites/640hud5"
+				"x"			"170"
+				"y"			"0"
+				"width"		"72"
+				"height"	"72"
+		}
+		"train_stop"
+		{
+				"file"		"sprites/640hud5"
+				"x"			"170"
+				"y"			"72"
+				"width"		"72"
+				"height"	"72"
+		}
+		"train_forward1"
+		{
+				"file"		"sprites/640hud5"
+				"x"			"170"
+				"y"			"144"
+				"width"		"72"
+				"height"	"72"
+		}
+		"train_forward2"
+		{
+				"file"		"sprites/640hud6"
+				"x"			"170"
+				"y"			"0"
+				"width"		"72"
+				"height"	"72"
+		}
+		"train_forward3"
+		{
+				"file"		"sprites/640hud6"
+				"x"			"170"
+				"y"			"72"
+				"width"		"72"
+				"height"	"72"
+		}
+		"autoaim_c"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"96"
+				"y"			"0"
+				"width"		"24"
+				"height"	"24"
+		}
+		"title_half"
+		{
+				"file"		"sprites/640hud4"
+				"x"			"0"
+				"y"			"226"
+				"width"		"256"
+				"height"	"30"
+		}
+		"title_life"
+		{
+				"file"		"sprites/640hud5"
+				"x"			"0"
+				"y"			"226"
+				"width"		"220"
+				"height"	"30"
+		}
+		"d_knife"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"0"
+				"width"		"72"
+				"height"	"24"
+		}
+		"d_pistol"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"24"
+				"width"		"40"
+				"height"	"24"
+		}
+		"d_pistol2"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"149"
+				"width"		"36"
+				"height"	"24"
+		}
+		"d_p90"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"48"
+				"width"		"64"
+				"height"	"24"
+		}
+		"d_shotgun"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"72"
+				"width"		"100"
+				"height"	"24"
+		}
+		"d_grenade_projectile"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"96"
+				"width"		"48"
+				"height"	"24"
+		}
+		"d_physics"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"173"
+				"width"		"44"
+				"height"	"24"
+		}
+		"d_fn2000"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"221"
+				"width"		"64"
+				"height"	"24"
+		}
+		"d_fn303"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"197"
+				"width"		"90"
+				"height"	"24"
+		}
+		"d_skull"
+		{
+				"file"		"sprites/640hud1"
+				"x"			"192"
+				"y"			"224"
+				"width"		"32"
+				"height"	"16"
+		}
+		"d_tracktrain"
+		{
+				"file"		"sprites/640hud1"
+				"x"			"192"
+				"y"			"240"
+				"width"		"32"
+				"height"	"16"
+		}
+		"microphone"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"119"
+				"width"		"30"
+				"height"	"30"
+		}
+		"item_battery"
+		{
+				"font"		"WeaponIcons"
+				"character"	"*"
+		}
+		"item_healthkit"
+		{
+				"font"		"WeaponIcons"
+				"character"	"+"
+		}
+		"item_longjump"
+		{
+				"file"		"sprites/640hud2"
+				"x"			"176"
+				"y"			"96"
+				"width"		"44"
+				"height"	"44"
+		}
+		"grenade"
+		{
+				"file"		"sprites/640hud7"
+				"x"			"48"
+				"y"			"96"
+				"width"		"24"
+				"height"	"24"
+		}
+		"crosshair"
+		{
+				"file"		"sprites/qi_center"
+				"x"			"0"
+				"y"			"0"
+				"width"		"40"
+				"height"	"40"
+		}
+		"crosshair_left"
+		{
+				"font"		"QuickInfo"
+				"character"	"("
+		}
+		"crosshair_right"
+		{
+				"font"		"QuickInfo"
+				"character"	")"
+		}
+		"crosshair_left_full"
+		{
+				"font"		"QuickInfo"
+				"character"	"["
+		}
+		"crosshair_right_full"
+		{
+				"font"		"QuickInfo"
+				"character"	"]"
+		}
+		"crosshair_left_empty"
+		{
+				"font"		"QuickInfo"
+				"character"	"{"
+		}
+		"crosshair_right_empty"
+		{
+				"font"		"QuickInfo"
+				"character"	"}"
+		}
+		"crosshair_default"
+		{
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
+		}
+		"viewhair"
+		{
+				"file"		"sprites/hud/v_crosshair2"
+				"x"			"0"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+		"gunhair"
+		{
+				"file"		"sprites/hud/v_crosshair1"
+				"x"			"0"
+				"y"			"0"
+				"width"		"32"
+				"height"	"32"
+		}
+
+		"progress_bar"
+		{
+				"file"		"sprites/hud1"
+				"x"			"238"
+				"y"			"0"
+				"width"		"10"
+				"height"	"28"
+		}
+
+		"plushair"
+		{
+				"font"		"Crosshairs"
+				"character"	"Q"
+//				"file"		"sprites/crosshairs"
+//				"x"			"0"
+//				"y"			"24"
+//				"width"		"24"
+//				"height"	"24"
+		}
+
+		"voice_player"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"119"
+				"width"		"30"
+				"height"	"30"
+		}
+
+		"voice_self"
+		{
+				"file"		"sprites/hdn_sprites"
+				"x"			"0"
+				"y"			"119"
+				"width"		"30"
+				"height"	"30"
+		}
+		// Radar Textures
+		"AMarineIcon"
+		{
+				"file"		"vgui/hud/assault_icon"
+				"x"		"0"
+				"y"		"0"
+				"width"		"64"
+				"height"	"64"	
+		}
+		"SMarineIcon"
+		{
+				"file"		"vgui/hud/supply_icon"
+				"x"		"0"
+				"y"		"0"
+				"width"		"64"
+				"height"	"64"	
+		}
+		"AMarineEIcon"
+		{
+				"file"		"vgui/hud/assault_icon_radio"
+				"x"		"0"
+				"y"		"0"
+				"width"		"64"
+				"height"	"64"	
+		}
+		"SMarineEIcon"
+		{
+				"file"		"vgui/hud/supply_icon_radio"
+				"x"		"0"
+				"y"		"0"
+				"width"		"64"
+				"height"	"64"	
+		}
+		"SonicIcon"
+		{
+				"file"		"vgui/hud/sonic_icon"
+				"x"		"0"
+				"y"		"0"
+				"width"		"64"
+				"height"	"64"	
+		}
+		//Other Hud Textures
+		"IrisHealth"
+		{
+   				"file"      "vgui/hud/hdn_irishealth"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "512"
+  				"height"   "256"
+		}
+		"IrisAmmo"
+		{
+   				"file"      "vgui/hud/hdn_irisammo"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "64"
+		}
+		"IrisTimer"
+		{
+   				"file"      "vgui/hud/hdn_iristime"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "64"
+		}
+		"IrisLocation"
+		{
+   				"file"      "vgui/hud/hdn_irislocation"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "64"
+		}
+		"HiddenAmmo"
+		{
+				"file"      "vgui/hud/hdn_hdnammo"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "128"
+		}
+		"HiddenHealth"
+		{
+				"file"      "vgui/hud/hdn_hdnhealth"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "128"
+		}
+		"HiddenTimer"
+		{
+				"file"      "vgui/hud/hdn_hdntime"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "128"
+		}
+		"HiddenStaminaBG"
+		{
+				"file"      "vgui/hud/hdn_staminaBG"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "32"
+		}
+		"HiddenStaminabar"
+		{
+				"file"      "vgui/hud/hdn_staminabar"
+  		 		"x"      "0"
+  		 		"y"      "0"
+  		 		"width"      "256"
+  				"height"   "32"
+		}
+	}	
+}

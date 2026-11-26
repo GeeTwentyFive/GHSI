@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "base/or_light1_off"
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "base/or_light1_spec"
+	"$envmaptint" "[.5 .5 .5]"
+}

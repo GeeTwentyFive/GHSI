@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/or_floor_kickplate"
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "floor/or_floor_kickplate_spec"
+	"$envmaptint" "[.3 .3 .3]"
+}

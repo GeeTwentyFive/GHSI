@@ -1,0 +1,10 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "floor/gen_floor_rockwall01"
+	"$basetexture2" "floor/gen_floor_snow01"
+	"$surfaceprop" "snow"
+	"$envmapmask" "floor/gen_floor_snow01_spec"
+	"$envmaptint" "[ .3 .3 .5 ]"
+	"$envmap" "env_cubemap"
+	"%tooltexture" "floor/gen_floor_rocksnow_tooltexture"
+}

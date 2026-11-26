@@ -1,0 +1,7 @@
+"LightmappedGeneric"
+{
+    "$basetexture" "base/decal_jimmeh"
+    "$decal" 1
+    "$decalscale" 1
+    "$translucent" 1
+}

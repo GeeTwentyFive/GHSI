@@ -1,0 +1,5 @@
+"HDN_PostBlur"
+{
+ 	"$model" 1
+	"$bluroffset"	2.5
+}

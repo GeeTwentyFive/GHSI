@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/IRIS_HeadA"
+	"$bumpmap" "models\player\IRIS_HeadA_normal"
+	"$surfaceprop" "flesh"
+	"$normalmapalphaenvmapmask" 1
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" "0.5"
+	"$envmaptint" "{25 25 25}"
+
+	"$phong" "1"
+	"$phongexponent" "64"
+	"$phongboost"	"16"
+	"$phongfresnelranges"	"[0.04 0.4 1.5]"
+
+}
+

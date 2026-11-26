@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$translucent" "1"
+	"$baseTexture" "vgui/hud/hdn_timerbar"
+	"$ignorez"	"1"
+}

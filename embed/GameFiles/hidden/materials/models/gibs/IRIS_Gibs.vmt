@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\gibs\IRIS_Gibs"
+	"$model" 1
+	"$surfaceprop" "flesh"
+}

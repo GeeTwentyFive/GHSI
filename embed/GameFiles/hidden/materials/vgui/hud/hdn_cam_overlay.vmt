@@ -1,0 +1,18 @@
+"HDN_HelmetCam" 
+{
+ 	"$model" 1
+	"$basetexture" "vgui/hud/hdn_cam_overlay"
+	//"$interlacetex" "vgui/hud/hdn_cam_interlace"
+	"$saturation"	0.70
+	"$noisetexture" "vgui/hud/hdn_cam_noise"
+
+"Proxies"{
+	
+		"TextureScroll"
+		{
+			"texturescrollvar" "$uvoffset"
+			"texturescrollrate" 8
+			"texturescrollangle" 90
+          	}
+}
+}

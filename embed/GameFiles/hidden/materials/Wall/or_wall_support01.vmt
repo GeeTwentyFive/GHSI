@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/or_wall_support01"
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "wall/or_wall_support01_spec"
+	"$envmaptint" "[.3 .3 .3]"
+}

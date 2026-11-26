@@ -1,0 +1,1072 @@
+// SHARED player sounds
+
+"Hidden.AuraIn"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"		"player/hidden/617-aurain01.wav"
+
+}
+
+"Hidden.AuraOut"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"		"player/hidden/617-auraout01.wav"
+
+}
+
+"Hidden.AuraLoop"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"		"player/hidden/617-auraloop01.wav"
+
+}
+
+"Hidden.BehindYou"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		")player/hidden/voice/617-behindyou01.mp3"
+		"wave"		")player/hidden/voice/617-behindyou02.mp3"
+	}	
+}
+
+
+"Hidden.TurnAround"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"rndwave"
+	{
+		"wave"		")player/hidden/voice/617-turnaround01.mp3"
+		"wave"		")player/hidden/voice/617-turnaround02.mp3"
+	}
+}
+
+"Hidden.ImHere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"rndwave"
+		{
+		"wave"		")player/hidden/voice/617-imhere01.mp3"
+		"wave"		")player/hidden/voice/617-imhere02.mp3"
+		"wave"		")player/hidden/voice/617-imhere03.mp3"
+		"wave"		")player/hidden/voice/617-imhere04.mp3"
+		}	
+}
+
+"Hidden.ISeeYou"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+
+
+	"rndwave"
+	{
+		"wave"		")player/hidden/voice/617-iseeyou01.mp3"
+		"wave"		")player/hidden/voice/617-iseeyou02.mp3"
+		"wave"		")player/hidden/voice/617-iseeyou03.mp3"
+	}
+}
+
+"Hidden.LookUp"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"rndwave"
+	{
+		"wave"		")player/hidden/voice/617-lookup01.mp3"
+		"wave"		")player/hidden/voice/617-lookup02.mp3"
+		"wave"		")player/hidden/voice/617-lookup03.mp3"
+	}
+}
+
+
+"Hidden.Death"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"rndwave"
+	{
+		"wave"		")player/hidden/voice/617-death01.mp3"
+		"wave"		")player/hidden/voice/617-death02.mp3"
+		"wave"		")player/hidden/voice/617-death03.mp3"
+		"wave"		")player/hidden/voice/617-death04.mp3"
+		"wave"		")player/hidden/voice/617-death05.mp3"
+		"wave"		")player/hidden/voice/617-death06.mp3"
+	}
+}
+
+
+"Hidden.Pain"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"rndwave"
+	{
+		"wave"		")player/hidden/voice/617-pain01.mp3"
+		"wave"		")player/hidden/voice/617-pain02.mp3"
+		"wave"		")player/hidden/voice/617-pain03.mp3"
+		"wave"		")player/hidden/voice/617-pain04.mp3"
+		"wave"		")player/hidden/voice/617-pain05.mp3"
+		"wave"		")player/hidden/voice/617-pain06.mp3"
+	}
+}
+
+"Hidden.303pain"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"rndwave"
+	{
+		"wave"		"player/hidden/voice/617-303pain01.mp3"
+		"wave"		"player/hidden/voice/617-303pain02.mp3"
+		"wave"		"player/hidden/voice/617-303pain03.mp3"
+		"wave"		"player/hidden/voice/617-303pain04.mp3"
+		"wave"		"player/hidden/voice/617-303pain05.mp3"
+		"wave"		"player/hidden/voice/617-303pain06.mp3"
+		"wave"		"player/hidden/voice/617-303pain07.mp3"
+		"wave"		"player/hidden/voice/617-303pain08.mp3"
+	}
+}
+
+"Hidden.OverHere"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_60dB"
+	"rndwave"
+	{
+		"wave"		"player/hidden/voice/617-overhere01.mp3"
+		"wave"		"player/hidden/voice/617-overhere02.mp3"
+		"wave"		"player/hidden/voice/617-overhere03.mp3"
+	}
+}
+
+"Hidden.YouAreNext"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_60dB"
+	"rndwave"
+	{
+		"wave"		"player/hidden/voice/617-radiotaunts01.mp3"
+		"wave"		"player/hidden/voice/617-radiotaunts02.mp3"
+	}
+}
+
+
+"Hidden.FreshMeat"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"player/hidden/voice/617-radiotaunts03.mp3"
+		"wave"		"player/hidden/voice/617-radiotaunts07.mp3"
+		"wave"		"player/hidden/voice/617-radiotaunts08.mp3"
+	}
+}
+
+"Hidden.ComingForYou"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"player/hidden/voice/617-radiotaunts04.mp3"
+		"wave"		"player/hidden/voice/617-radiotaunts05.mp3"
+		"wave"		"player/hidden/voice/617-radiotaunts06.mp3"
+	}
+}
+
+"Hidden.Radiotaunt.IRISradio" // Wet version, the IRIS hear this
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts01.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts02.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts03.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts04.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts05.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts06.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts07.mp3"
+	"wave"		"player/hidden/voice/IRIS-617radiotaunts08.mp3"
+}
+
+
+//  IRIS Round start/end -------------------------------------------------------
+
+"IRIS.RoundStart"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-roundstart01.wav"
+		"wave"		"player/iris/IRIS-roundstart02.wav"
+		"wave"		"player/iris/IRIS-roundstart03.wav"
+		"wave"		"player/iris/IRIS-roundstart04.wav"
+		"wave"		"player/iris/IRIS-roundstart05.wav"
+		"wave"		"player/iris/IRIS-roundstart06.wav"
+		"wave"		"player/iris/IRIS-roundstart07.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundstart01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundstart02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundstart03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundstart04.wav"
+	}
+}
+
+"IRIS.RoundEnd"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-roundend01.wav"
+		"wave"		"player/iris/IRIS-roundend02.wav"
+		"wave"		"player/iris/IRIS-roundend03.wav"
+		"wave"		"player/iris/IRIS-roundend04.wav"
+		"wave"		"player/iris/IRIS-roundend05.wav"
+		"wave"		"player/iris/IRIS-roundend06.wav"
+		"wave"		"player/iris/IRIS-roundend07.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundend01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundend02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundend03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundend04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-roundend05.wav"
+
+
+	}
+}
+
+"IRIS.303stun"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-303stun01.wav"
+		"wave"		"player/iris/IRIS-303stun02.wav"
+		"wave"		"player/iris/IRIS-303stun03.wav"
+		"wave"		"player/iris/IRIS-303stun04.wav"
+		"wave"		"player/iris/IRIS-303stun05.wav"
+	}
+}
+
+"IRIS.RageAlert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-ragealert01.wav"
+		"wave"		"player/iris/IRIS-ragealert02.wav"
+		"wave"		"player/iris/IRIS-ragealert03.wav"
+		"wave"		"player/iris/IRIS-ragealert04.wav"
+		"wave"		"player/iris/IRIS-ragealert05.wav"
+		"wave"		"player/iris/IRIS-ragealert06.wav"
+		"wave"		"player/iris/IRIS-ragealert07.wav"
+		"wave"		"player/iris/IRIS-ragealert08.wav"
+		"wave"		"player/iris/IRIS-ragealert09.wav"
+		"wave"		"player/iris/IRIS-ragealert10.wav"
+	}
+}
+
+// IRIS Deploying items -------------------------------------------------------
+"IRIS.DeployNV"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"wave"		"player/iris/IRIS-NVon01.wav"
+}
+
+"IRIS.UnDeployNV"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"wave"		"player/iris/IRIS-NVoff01.wav"
+}
+
+"IRIS.DeploySonicAlarm"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-alarm01.wav"
+		"wave"		"player/iris/IRIS-alarm02.wav"
+		"wave"		"player/iris/IRIS-alarm03.wav"
+	}
+}
+
+//  IRIS Radio ---------------------------------------------------------------
+
+"IRIS.RequestBackup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-backup01.wav"
+		"wave"		"player/iris/IRIS-backup02.wav"
+		"wave"		"player/iris/IRIS-backup03.wav"
+		"wave"		"player/iris/IRIS-backup04.wav"
+		"wave"		"player/iris/IRIS-backup05.wav"
+	}
+}
+
+"IRIS.FriendlyFireWarning"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-ff01.wav"
+		"wave"		"player/iris/IRIS-ff02.wav"
+		"wave"		"player/iris/IRIS-ff03.wav"
+		"wave"		"player/iris/IRIS-ff04.wav"
+		"wave"		"player/iris/IRIS-ff05.wav"
+	}
+}
+
+"IRIS.SecureArea"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-securearea01.wav"
+		"wave"		"player/iris/IRIS-securearea02.wav"
+		"wave"		"player/iris/IRIS-securearea03.wav"
+		"wave"		"player/iris/IRIS-securearea04.wav"
+	}
+}
+
+"IRIS.Negative"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-negative01.wav"
+		"wave"		"player/iris/IRIS-negative02.wav"
+		"wave"		"player/iris/IRIS-negative03.wav"
+		"wave"		"player/iris/IRIS-negative04.wav"
+	}
+}
+
+"IRIS.RequestBackup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-backup01.wav"
+	}
+}
+
+"IRIS.Affirmative"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-affirmative01.wav"
+		"wave"		"player/iris/IRIS-affirmative02.wav"
+		"wave"		"player/iris/IRIS-affirmative03.wav"
+		"wave"		"player/iris/IRIS-affirmative04.wav"
+		"wave"		"player/iris/IRIS-affirmative05.wav"
+		"wave"		"player/iris/IRIS-affirmative06.wav"
+	}
+}
+
+"IRIS.AgentDown"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-agentdown01.wav"
+		"wave"		"player/iris/IRIS-agentdown02.wav"
+		"wave"		"player/iris/IRIS-agentdown03.wav"
+		"wave"		"player/iris/IRIS-agentdown04.wav"
+	}
+}
+
+"IRIS.EnemySighted"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-sighted01.wav"
+		"wave"		"player/iris/IRIS-sighted02.wav"
+		"wave"		"player/iris/IRIS-sighted03.wav"
+		"wave"		"player/iris/IRIS-sighted04.wav"
+		"wave"		"player/iris/IRIS-sighted05.wav"
+		"wave"		"player/iris/IRIS-sighted06.wav"
+		"wave"		"player/iris/IRIS-sighted07.wav"
+		"wave"		"player/iris/IRIS-sighted08.wav"
+		"wave"		"player/iris/IRIS-sighted09.wav"
+		"wave"		"player/iris/IRIS-sighted10.wav"
+	}
+}
+
+
+"IRIS.ReportIn"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-reportin01.wav"
+		"wave"		"player/iris/IRIS-reportin02.wav"
+		"wave"		"player/iris/IRIS-reportin03.wav"
+		"wave"		"player/iris/IRIS-reportin04.wav"
+		"wave"		"player/iris/IRIS-reportin05.wav"
+	}
+}
+
+"IRIS.ReportingIn"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-reportingin01.wav"
+		"wave"		"player/iris/IRIS-reportingin02.wav"
+		"wave"		"player/iris/IRIS-reportingin03.wav"
+		"wave"		"player/iris/IRIS-reportingin04.wav"
+		"wave"		"player/iris/IRIS-reportingin05.wav"
+		"wave"		"player/iris/IRIS-reportingin06.wav"
+		"wave"		"player/iris/IRIS-reportingin07.wav"
+		"wave"		"player/iris/IRIS-reportingin08.wav"
+		"wave"		"player/iris/IRIS-reportingin09.wav"
+		"wave"		"player/iris/IRIS-reportingin10.wav"
+	}
+}
+
+"IRIS.RequestingAmmo"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-requestingammo01.wav"
+		"wave"		"player/iris/IRIS-requestingammo02.wav"
+		"wave"		"player/iris/IRIS-requestingammo03.wav"
+		"wave"		"player/iris/IRIS-requestingammo04.wav"
+		"wave"		"player/iris/IRIS-requestingammo05.wav"
+		"wave"		"player/iris/IRIS-requestingammo06.wav"
+		"wave"		"player/iris/IRIS-requestingammo07.wav"
+	}
+}
+
+"IRIS.IfItBleeds"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-taunt02.wav"
+	}
+}
+
+"IRIS.OneUglyMother"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-taunt06.wav"
+	}
+}
+
+"IRIS.WhereAreYou"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-taunt07.wav"
+	}
+}
+
+"IRIS.ComeOnOut"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-taunt06.wav"
+	}
+}
+
+"IRIS.BringIt"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/IRIS-taunt03.wav"
+	}
+}
+
+
+// IRIS B - UK Accent ------------------------------------------------------------------------
+
+"IRIS-B.RequestBackup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-backup01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-backup02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-backup03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-backup04.wav"
+	}
+}
+
+"IRIS-B.FriendlyFireWarning"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-ff01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-ff02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-ff03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-ff04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-ff05.wav"
+	}
+}
+
+"IRIS-B.SecureArea"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-securearea01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-securearea02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-securearea03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-securearea04.wav"
+	}
+}
+
+"IRIS-B.Negative"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-negative01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-negative02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-negative03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-negative04.wav"
+	}
+}
+
+"IRIS-B.RequestBackup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-backup01.wav"
+	}
+}
+
+"IRIS-B.Affirmative"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-affirmative01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-affirmative02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-affirmative03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-affirmative04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-affirmative05.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-affirmative06.wav"
+	}
+}
+
+"IRIS-B.AgentDown"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-agentdown01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-agentdown02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-agentdown03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-agentdown04.wav"
+	}
+}
+
+"IRIS-B.EnemySighted"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-sighted01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted05.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted06.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted07.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted08.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted09.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-sighted10.wav"
+	}
+}
+
+
+"IRIS-B.ReportIn"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-reportin01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportin02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportin03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportin04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportin05.wav"
+	}
+}
+
+"IRIS-B.ReportingIn"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin05.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin06.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin07.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin08.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin09.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-reportingin10.wav"
+	}
+}
+
+"IRIS-B.RequestingAmmo"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo05.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo06.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-requestingammo07.wav"
+	}
+}
+
+"IRIS-B.Taunt"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_TALKING"
+
+	"rndwave"
+	{
+		"wave"		"player/iris/iris-b/IRIS-B-taunt01.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-taunt02.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-taunt03.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-taunt04.wav"
+		"wave"		"player/iris/iris-b/IRIS-B-taunt05.wav"
+	}
+}
+
+
+// End IRIS-B ------------------------------------------------------------------------
+
+//  IRIS sounds --------------------------------------------------------------
+"Player.FriendlyFire.Death"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"85,115"
+
+	"rndwave"
+	{
+		"wave"	"player/iris/IRIS-death11.wav"
+		"wave"	"player/iris/IRIS-death12.wav"
+		"wave"	"player/iris/IRIS-death13.wav"
+		"wave"	"player/iris/IRIS-death14.wav"
+	}
+}
+
+"Player.KnifeSlash.Death"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"85,110"
+
+	"rndwave"
+	{
+		"wave"	"player/iris/IRIS-death04.wav"
+		"wave"	"player/iris/IRIS-death05.wav"
+		"wave"	"player/iris/IRIS-death08.wav"
+		"wave"	"player/iris/IRIS-death09.wav"	
+		"wave"	"player/iris/IRIS-death10.wav"
+		"wave"	"player/iris/IRIS-death15.wav"
+		"wave"	"player/iris/IRIS-death16.wav"
+		"wave"	"player/iris/IRIS-death17.wav"
+		"wave"	"player/iris/IRIS-death18.wav"
+		"wave"	"player/iris/IRIS-death19.wav"
+		"wave"	"player/iris/IRIS-death20.wav"
+	}
+}
+
+"Player.KnifePigstick.Death"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"85,110"
+
+	"rndwave"
+	{
+		"wave"	"player/iris/IRIS-death01.wav"
+		"wave"	"player/iris/IRIS-death02.wav"
+		"wave"	"player/iris/IRIS-death03.wav"
+		"wave"	"player/iris/IRIS-death06.wav"
+		"wave"	"player/iris/IRIS-death07.wav"
+	}
+}
+
+//Attacked by Hidden or friendly fire
+"IRIS.Damage"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"rndwave"
+	{
+		"wave"	"player/iris/IRIS-pain01.wav"
+		"wave"	"player/iris/IRIS-pain02.wav"
+		"wave"	"player/iris/IRIS-pain03.wav"
+		"wave"	"player/iris/IRIS-pain04.wav"
+		"wave"	"player/iris/IRIS-pain05.wav"
+		"wave"	"player/iris/IRIS-pain06.wav"
+		"wave"	"player/iris/IRIS-pain07.wav"
+		"wave"	"player/iris/IRIS-pain08.wav"
+		"wave"	"player/iris/IRIS-pain09.wav"
+		
+	}
+}
+
+"Player.Falldamage"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"rndwave"
+	{
+		"wave"	"player/iris/IRIS-pain10.wav"
+		"wave"	"player/iris/IRIS-pain11.wav"
+		"wave"	"player/iris/IRIS-pain12.wav"
+		
+		
+	}
+}
+
+
+"Player.DrownStart"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"wave"	"player/pl_drown1.wav"
+}
+
+"Player.Swim"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5"
+	"pitch"		"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"		"player/footsteps/wade5.wav"
+		"wave"		"player/footsteps/wade6.wav"
+		"wave"		"player/footsteps/wade7.wav"
+		"wave"		"player/footsteps/wade8.wav"
+	}
+}
+
+
+"Player.FallGib"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.75"
+	"pitch"		"90,110"
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"		"physics/body/body_medium_break2.wav"
+	}
+}
+
+"Player.DrownContinue"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"		"90,110"
+
+	"rndwave"
+	{
+		"wave"	"player/pl_drown1.wav"
+		"wave"	"player/pl_drown2.wav"
+		"wave"	"player/pl_drown3.wav"
+	}
+}
+
+"Player.Wade"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.25"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"rndwave"
+	{
+		"wave"	"player/iris/svpsewer_waterstep_L.wav"
+		"wave"	"player/iris/svpsewer_waterstep_R.wav"
+	}
+}
+
+"Player.AmbientUnderWater"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.22"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"ambient/water/underwater.wav"
+}
+
+"Player.UseTrain"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"plats/train_use1.wav"
+}
+
+"Player.UseDeny"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.4"
+	"soundlevel"  "SNDLVL_75dB"
+
+	"wave"	"common/wpn_select.wav"
+}
+
+"Player.PickupWeapon"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_75dB"
+	"pitch"	"95,105"
+	"wave"	"items/ammo_pickup.wav"
+}
+
+
+"Geiger.BeepLow"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"player/geiger1.wav"
+		"wave"	"player/geiger2.wav"
+	}
+}
+
+"Geiger.BeepHigh"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"rndwave"
+	{
+		"wave"	"player/geiger2.wav"
+		"wave"	"player/geiger3.wav"
+	}
+}
+
+//HL2MP
+
+"NPC_MetroPolice.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.500"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"npc/metropolice/die1.wav"
+		"wave"	"npc/metropolice/die2.wav"
+		"wave"	"npc/metropolice/die3.wav"
+		"wave"	"npc/metropolice/die4.wav"
+	}
+}
+
+"NPC_CombineS.Die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.500"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"npc/combine_soldier/die1.wav"
+		"wave"	"npc/combine_soldier/die2.wav"
+		"wave"	"npc/combine_soldier/die3.wav"
+	}
+}
+"NPC_Citizen.die"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"*vo/npc/$gender01/pain07.wav"
+		"wave"	"*vo/npc/$gender01/pain08.wav"
+		"wave"	"*vo/npc/$gender01/pain09.wav"
+	}
+}

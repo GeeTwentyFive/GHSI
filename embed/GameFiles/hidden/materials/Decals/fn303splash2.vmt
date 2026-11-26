@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "Decals/fn303splash2"
+	"$decal" 1
+	"$decalscale" 0.35
+	"$modelmaterial" "Decals/fn303splashmodel"
+}

@@ -1,0 +1,16 @@
+ soundscapes_manifest
+{
+   "file"      "scripts/soundscapes.txt"
+   "file"      "scripts/soundscapes_decay.txt"
+   "file"      "scripts/soundscapes_derelict.txt"
+   "file"      "scripts/soundscapes_discovery.txt"
+   "file"      "scripts/soundscapes_docks.txt"
+   "file"      "scripts/soundscapes_executive.txt"
+   "file"      "scripts/soundscapes_highrise.txt"
+   "file"      "scripts/soundscapes_htrtutorial.txt"
+   "file"      "scripts/soundscapes_mtrtutorial.txt"
+   "file"      "scripts/soundscapes_origin.txt"
+   "file"      "scripts/soundscapes_sewers.txt"
+   "file"      "scripts/soundscapes_stalkyard.txt"
+   "file"      "scripts/soundscapes_traindepot.txt"
+}

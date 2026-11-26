@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/dc_floor_slatrot01"
+	"$surfaceprop" "wood"
+	"$bumpmap" "floor/dc_floor_slatrot01_normal"
+}

@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\generic\gen_model_metal_barrel03"
+	"$envmap" "env_cubemap"
+	"$envtint" "[.3 .3 .3]"
+	"$bumpmap" "models\generic\gen_model_metal_barrel01_normal"
+	"$envmapsaturation" .5
+	"$envmapcontrast" 1
+	"$normalmapalphaenvmapmask" 1
+
+// -- From here down is new stuff which will only be applied if $phong is set to 1 --
+	"$phong" "1"
+	"$phongexponent"  "145"
+	"$phongboost"	"8"
+	"$phongfresnelranges"	"[1 0.4 1]"
+}

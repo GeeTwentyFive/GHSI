@@ -1,0 +1,112 @@
+"lang" 
+{ 
+"Language" "German" 
+"Tokens" 
+{
+// Scoreboard strings
+"HDN_Player"				"Hidden"
+"[english]HDN_Player"			"Hidden"
+"HDN_Tutorial"				"Einführungen"
+"[english]HDN_Tutorial"			"Tutorials"
+
+// client side menus
+//global strings
+"HDN_Cancel"				"&0 ABBRECHEN"
+"HDN_CancelLabel"				"ABBRECHEN"
+"HDN_OK"					"&OK"
+"HDN_OKLabel"				"BESTÄTIGEN"
+
+"SDK_MP5"				"FN P90"
+"SDK_SHOTGUN"				"870 MCS"
+"HDN_KABAR"				"Kabar"
+"HDN_Pipebomb"				"Rohrbombe"
+"HDN_FiveSeven"				"FN FiveSeven"
+"HDN_FNP9"				"FNP9"
+
+"HDN_Pounce"			"Hidden Pounce"
+"[english]HDN_Pounce"		"Hidden Pounce"
+"HDN_Primary_Fire"			"Primärer Angriff"
+"[english]HDN_Primary_Fire"		"Primary Fire"
+"HDN_Secondary_Fire"		"Pig Sticker"
+"[english]HDN_Secondary_Fire"	"Pig Sticker"
+"HDN_Combat_Title"		"COMBAT BINDS"
+"[english]HDN_Combat_Title"		"COMBAT BINDS"
+"HDN_Reload_Weapon"		"Nachladen"
+"[english]HDN_Reload_Weapon"	"Reload"
+"HDN_Flashlight"			"Sekundäre Ausrüstung"
+"[english]HDN_Flashlight"		"Secondary Equipment"
+"HDN_Aura"			"Aura Sicht"
+"[english]HDN_Aura"		"Aura-Ansicht"
+"HDN_AmmoSupply"		"Munition abgeben"
+"[english]HDN_AmmoSupply"		"Drop Ammo Pack"
+"HDN_Radio_Menu"			"Radiomenü"
+"[english]HDN_Radio_Menu"		"Radio Menu"
+
+"HDN_Reset_View"			"Ansicht zurücksetzen"
+"[english]HDN_Reset_View"		"Reset View"
+"HDN_Mouse_Look"			"Mouse Look"
+"[english]HDN_Mouse_Look"		"Mouse Look"
+"HDN_Keyboard_Look"		"Keyboard Look"
+"[english]HDN_Keyboard_Look"	"Keyboard Look"
+
+"HDN_Menu_Item_1"		"Slot 1"
+"HDN_Menu_Item_2"		"Slot 2"
+"HDN_Menu_Item_3"		"Slot 3"
+"HDN_Menu_Item_4"		"Slot 4"
+"HDN_Menu_Item_5"		"Slot 5"
+
+"HDN_Class_Menu"			"Klassen / Beobachter Menü"
+"[english]HDN_Class_Menu"		"Class / Spectator Menu"
+
+"Game_connected"			"Verbunden"
+"[english]Game_connected"		"Connected"
+
+//Class menu
+"HDN_Class_Selection"				"KLASSE WÄHLEN"
+"HDN_Change_Class"				"MARINEKLASSE WÄHLEN"
+"HDN_Class_SMG"					"&1 SMG MARINE"
+"HDN_Class_Shotgun"				"&2 SHOTGUN MARINE"
+"HDN_Class_Random"				"&3 ZUFÄLLIGE KLASSE"
+"HDN_Menu_Spectate" 				"&4 ZUSCHAUEN"
+
+//Note: 64 CHAR LIMIT PER HINT!
+
+//HTR_Tutorial Hints
+"617_use"		"%+use%GEGENSTÄNDE UND LEICHEN AUFNEHMEN/ABLEGEN"
+"[english]617_use"	"%+use%PICK UP/DROP ITEMS AND CORSPES"
+"617_aura"		"%+aura%ZEIGT GEGNER UND DEREN GESUNDHEIT AUF KOSTEN DER AUSDAUER"
+"[english]617_aura"	"%+aura%SHOWS IRIS PLAYERS AND THEIR HEALTH, WEARS STAMINA DOWN"
+"617_pounce"		"%+pounce%EIN SEHR KRÄFTIGER SPRUNG ZUM ANGREIFEN ODER FLÜCHTEN"
+"[english]617_pounce"	"%+pounce%A POWERFUL LUNGE IN THE PLAYER'S DIRECTION"
+"617_attack1"		"%+attack%SCHNELLER ANGRIFF, GUT UM GEGENSTÄNDE ZU ZERSTÖREN"
+"[english]617_attack1"	"%+attack%QUICK SLASH WITH MEDIUM DAMAGE, USEFUL FOR DESTROYING OBJECTS"
+"617_attack2"		"%+attack2%OBJEKTE/GEGNER WEGSTOSSEN"
+"[english]617_attack2"	"%+attack2%SHOVE CAUSES NO DAMAGE BUT GOOD FOR PUNTING OBJECTS/PLAYERS"
+"617_feed"		"%+attack%JEDER STICH AUF EINE LEICHE STELLT 5HP BIS MAX. 25HP WIEDERHER"
+"[english]617_feed"	"%+attack%EVERY SLASH ON A CORSPE GIVES 5HP TO A MAX 25HP GAIN"
+"617_pin"		"%+attack2%NIMM EINE LEICHE, STELL DICH VOR EINE WAND UND DRÜCK PIG STICK"
+"[english]617_pin"	"%+attack2%WHEN HOLDING A CORPSE POUNCE AT SURFACE AND PRESS AGAIN TO PIN"
+"617_cling"		"%+pounce%POUNCE GEGEN EINE WAND UND DRÜCKE ERNEUT, UM AN IHR ZU HAFTEN"
+"[english]617_cling"	"%+pounce%POUNCE AT SURFACE AND PRESS AGAIN TO WALLCLING TO SURFACE"
+
+//MTR_Tutorial Hints
+"IRIS_equip"		"%impulse 100%ZWISCHEN DER ZUSÄTZLICHEN AUSRÜSTUNG WECHSELN (TASCHENLAMPE...)"
+"[english]IRIS_equip"	"%impulse 100%TOGGLE SELECTED ADDITIONAL EQUIPMENT (FLASHLIGHT, LAM, ETC)"
+"IRIS_equip2"		"%impulse 100%PROBIERE AUCH ANDERE WAFFEN- UND AUSRÜSTUNGSKOMBINATIONEN AUS"
+"[english]IRIS_equip2"	"%impulse 100%BE SURE TO TRY DIFFERENT WEAPON AND EQUIPMENT LOADOUTS"
+"IRIS_attack"		"%+attack%SCHIESS AUF DAS SCHLOSS, UM DAS TOR ZU ÖFFNEN"
+"[english]IRIS_attack"	"%+attack%FIRE WEAPON TO BREAK PADLOCK AND OPEN GATE"
+"IRIS_attack2"		"%+attack2%SCHAUE DURCH DAS ZIELFERNROHR (NUR BEI FN2000 VERFÜGBAR)"
+"[english]IRIS_attack2"	"%+attack2%VIEW THROUGH SCOPE (AVAILABLE ON F2000 ONLY)"
+"IRIS_jump"		"%+jump%SPRING ÜBER DAS HINDERNIS UM FORTZFAHREN"
+"[english]IRIS_jump"	"%+jump%JUMP OVER DEBRIS IN YOUR PATH TO CONTINUE"
+"IRIS_hex"		"%+use%GEDRÜCKT HALTEN, UM DEN SPRENGSTOFF ZU PLATZIEREN."
+"[english]IRIS_hex"		"%+use%HOLD TO SET DEMOPACK. OBJECTIVE TEXT DISAPPEARS ON COMPLETION"
+"IRIS_hex2"		"%+use%DIES WAR EIN BEISPIEL FÜR HEX ZIELE"
+"[english]IRIS_hex2"	"%+use%THAT WAS ONE EXAMPLE OF A HEX OBJECTIVE"
+"IRIS_617"		"%+use%EIN BEISPIEL DES 617 BEFINDET SICH HINTER DEM RECHTEN GITTER"
+"[english]IRIS_617"		"%+use%EXAMPLE OF 617 BEHIND THE FENCE ON YOUR RIGHT"
+} 
+}  
+
+ 

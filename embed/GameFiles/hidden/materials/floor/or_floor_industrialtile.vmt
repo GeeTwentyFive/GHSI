@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/or_floor_industrialtile"
+	"$detail" "detail/detail_floor_metal02"
+	"$detailscale" 4
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "floor/or_floor_industrialtile_spec"
+	"$envmaptint" "[.3 .3 .3]"
+}

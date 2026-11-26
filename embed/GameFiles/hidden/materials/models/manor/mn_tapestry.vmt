@@ -1,0 +1,24 @@
+"Refract"
+{
+	"$model" 1
+
+	"Refract_DX90"
+		{
+			"$refractamount" "0.015"
+		}
+
+	"Refract_DX60"
+		{
+		"$fallbackmaterial" "models/manor/mn_tapestry_dx7"
+		}
+	
+	"$normalmap" "models/manor/mn_tapestry_normal"
+	"$dudvmap" "models/manor/mn_tapestry_dudv"
+	"$refractamount" "0.003"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$surfaceprop"   "flesh"
+	"$nofog" "1"
+	"$translucent"   "1"
+	"$forcerefract"  "1"
+}

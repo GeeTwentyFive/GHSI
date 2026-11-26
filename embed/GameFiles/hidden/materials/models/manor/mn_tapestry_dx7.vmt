@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$model" "1"
+	"$basetexture" "models/manor/mn_tapestry"
+	"$additive" "1"
+	"$translucent" "1"
+	"$surfaceprop" "flesh"
+
+	"Proxies" 
+     		{ 
+            	"Sine" 
+            	{ 
+				"resultVar"    "$alpha" 
+				"sineperiod"   30 
+                  	"sinemin"      0 
+				"sinemax"      0.001
+     			} 
+		}
+}

@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/labs/lb_signcase"
+	"$model" 1
+	"$surfaceprop" "metal"
+	"$bumpmap" "Models/labs/lb_signcase_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.7 .7 .7]"
+}
+
+
+
+
+

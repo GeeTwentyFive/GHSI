@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/gen_floor_wood_slatted01"
+	"$surfaceprop" "wood"
+	"$bumpmap" "floor/gen_floor_wood_slatted01_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmaptint" "[.3 .3 .3]"
+}

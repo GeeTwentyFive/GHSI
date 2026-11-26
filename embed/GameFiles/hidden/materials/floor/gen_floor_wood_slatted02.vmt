@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/gen_floor_wood_slatted02"
+	"$surfaceprop" "wood"
+}

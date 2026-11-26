@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Floor/HR_Floor_RedMarble01"
+	"$surfaceprop" "tile"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "Floor/HR_Floor_RedMarble01_spec"
+	"$envmaptint" "[.5 .5 .5]"
+}

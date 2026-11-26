@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\generic\gen_model_metal_junkcar01a"
+	"$model" 1
+	"$surfaceprop" "metal"
+	
+}

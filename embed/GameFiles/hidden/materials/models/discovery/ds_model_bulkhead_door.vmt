@@ -1,0 +1,11 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/discovery/ds_model_bulkhead_door"
+	 $model 1
+	"$surfaceprop" "metal"
+	//"$bumpmap" "models/discovery/ds_model_bulkhead_door_normal"
+	"$envmap" "env_cubemap"
+	"$basemapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.25 .25 .25]"
+}

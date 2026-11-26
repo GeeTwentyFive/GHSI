@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\generic\dr_model_brickwall"
+	"$model" 1
+	"$surfaceprop" "concrete"
+}

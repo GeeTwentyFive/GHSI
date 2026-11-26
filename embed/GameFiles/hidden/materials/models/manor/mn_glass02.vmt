@@ -1,0 +1,41 @@
+"Refract"
+{
+	"$bluramount" "1"
+	"$model" 1
+	"$refractamount" ".3"
+	"$refracttint" "[.8 .8 .8]"
+	"$surfaceprop" "glass"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.7 .7 .7]"
+
+	"$dudvmap" "models/manor/mn_glass02_dudv"
+	"$normalmap" "models/manor/mn_glass02_normal"
+	
+	"$bumpframe" "0"
+
+	"$REFRACTTINTTEXTURE" "models/manor/mn_glass02"
+}
+
+"Refract_DX80"
+	{
+	"$bluramount" "0"
+	"$model" 1
+	"$refractamount" ".05"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.7 .7 .7]"
+	}
+
+
+"UnlitGeneric_dx8"
+	{
+     	"$basetexture" "models/manor/mn_glass02"
+	"$model" 1
+	"$translucent" 1
+	}
+
+"UnlitGeneric_dx6"
+	{
+     	"$basetexture" "models/manor/mn_glass02"
+	"$model" 1
+	"$translucent" 1
+	}

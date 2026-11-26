@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "floor/dc_floor_panelrot01"
+	"$surfaceprop" "wood"
+	"$bumpmap" "floor/dc_floor_panelrot01_normal"
+}

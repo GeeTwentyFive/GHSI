@@ -1,0 +1,17 @@
+"UnlitTwoTexture"
+{
+	"$translucent" "1"
+	"$baseTexture" "vgui/hud/hdn_irisammo"
+	"$texture2"	"vgui/hud/noise"
+	"$ignorez"	"1"
+
+"Proxies"{
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 4
+			"texturescrollangle" "-55"
+            	}
+		
+	}
+}

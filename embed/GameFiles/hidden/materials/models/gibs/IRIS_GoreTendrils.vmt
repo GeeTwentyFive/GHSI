@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\gibs\IRIS_GoreTendrils"
+	"$model" 1
+	"$surfaceprop" "flesh"
+	"$translucent" 1
+	"$nocull" 1
+}

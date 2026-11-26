@@ -1,0 +1,38 @@
+"UnlitTwoTexture"
+{
+ 	"$model" 1
+	"$selfillum" 1
+	"$surfaceprop" "glass"
+	"$baseTexture" "Models/labs/lb_swipelock_broken"
+	"$Texture2" "Models/labs/lb_swipelock_broken"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.8 .8 .8]"
+	"$angle" 0.5
+
+"Proxies"{
+		"Sine" 
+            	{ 
+                   "resultVar"    "$angle" 
+                   "sineperiod"   10
+                   "sinemin"      -2
+                   "sinemax"      1
+            	}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$basetexturetransform"
+			"texturescrollrate" 8
+			"texturescrollangle" "$angle"
+            	}
+
+		"TextureScroll"
+		{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 2
+			"texturescrollangle" "$angle"
+            	}
+		
+	}
+}

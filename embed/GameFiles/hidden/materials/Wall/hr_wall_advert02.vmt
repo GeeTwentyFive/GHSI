@@ -1,0 +1,13 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Wall/HR_Wall_Advert02"
+	"$surfaceprop" "glass"
+	"$bumpmap" "Wall/HR_Wall_Advert01_normal"
+	
+	"$envmap" "env_cubemap"
+	"$basemapalphaenvmapmask" 1
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[1 1 1]"
+	"$envmapmask"	"Wall/HR_Wall_Advert02"
+}

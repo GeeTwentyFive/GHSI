@@ -1,0 +1,97 @@
+"soundscapes.discovery_exterior"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/trainstation_ambient_loop1.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/city_tone.wav"
+     }
+
+     "playrandom"
+     {
+      "time"         "12,32"
+      "volume"       "0.1,0.2"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/atmosphere/thunder1.wav"
+           "wave"   "ambient/atmosphere/thunder2.wav"
+           "wave"   "ambient/atmosphere/thunder3.wav"
+	   "wave"   "ambient/atmosphere/thunder4.wav"
+
+        }
+      }
+
+ "playrandom"
+     {
+      "time"         "12,32"
+      "volume"       "0.1,0.2"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/wind/wind_med1.wav"
+           "wave"   "ambient/wind/wind_med2.wav"
+           "wave"   "ambient/wind/wind_moan1.wav"
+	   "wave"   "ambient/wind/wind_moan2.wav"
+	   "wave"   "ambient/wind/wind_moan3.wav"
+
+        }
+      }
+
+
+     "playrandom"
+     {
+      "time"         "45,115"
+      "volume"       "0.1,0.2"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/creatures/seagull_idle1.wav"
+           "wave"   "ambient/creatures/seagull_idle2.wav"
+           "wave"   "ambient/creatures/seagull_idle3.wav"
+	   
+        }
+      } 
+}
+
+
+ "soundscapes.discovery_mainroom"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/captain_room.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "30,60"
+      "volume"       "0.1,0.3"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/materials/shipgroan1.wav"
+           "wave"   "ambient/materials/shipgroan2.wav"
+           "wave"   "ambient/materials/shipgroan3.wav"
+	   "wave"   "ambient/materials/shipgroan4.wav"
+        } 
+      }
+}

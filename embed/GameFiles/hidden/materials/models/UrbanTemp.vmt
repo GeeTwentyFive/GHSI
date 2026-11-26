@@ -1,0 +1,52 @@
+
+"Refract"
+{
+		"$model" 1
+		"$refractamount" "0.004"
+		"$refracttint" "[1 1 1]"
+
+		"$bumpmap" "models/UrbanTemp_bump"
+		"$normalmap" "models/UrbanTemp_bump"
+
+	"Refract_dx90"
+	{
+		"$refractamount" "0.02"
+	}
+	
+	"Refract_dx80"
+	{
+		"$bumpmap" "models/UrbanTemp_bump"
+		"$normalmap" "models/UrbanTemp_bump"
+	}
+
+	"UnlitGeneric_dx8"
+	{
+     	"$basetexture" "models/UrbanTemp"
+	    "Proxies" 
+     		{ 
+            "Sine" 
+            	{ 
+                   "resultVar"    "$alpha" 
+                   "sineperiod"   16 
+                   "sinemin"      0.03 
+                   "sinemax"      0.04
+     			} 
+		}
+	}
+
+
+	"UnlitGeneric_dx6"
+	{
+     	"$basetexture" "models/UrbanTemp"
+	    "Proxies" 
+     		{ 
+            "Sine" 
+            	{ 
+                   "resultVar"    "$alpha" 
+                   "sineperiod"   16 
+                   "sinemin"      0.03 
+                   "sinemax"      0.04
+     			} 
+		}
+	}
+}

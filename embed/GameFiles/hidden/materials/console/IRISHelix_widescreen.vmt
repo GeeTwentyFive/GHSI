@@ -1,0 +1,20 @@
+"UnlitTwoTexture"
+{
+	"$basetexture" "console/IRISHelix_widescreen"
+	"$texture2" "vgui/hud/hdn_cam_noise" 
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$ignorez" 1
+	"$no_fullbright" "1"
+	"$nolod" "1"
+
+"Proxies"{
+		"TextureScroll"
+			{
+			"texturescrollvar" "$texture2transform"
+			"texturescrollrate" 5 
+			"texturescrollangle" "75"
+            	}
+		
+	   }
+}

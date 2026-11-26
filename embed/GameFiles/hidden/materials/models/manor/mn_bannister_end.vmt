@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\manor\mn_bannister_end"
+	 $model 1
+	"$bumpmap" "models\manor\mn_bannister_end_normal"
+	"$surfaceprop" "wood"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.7 .7 .7]"
+}

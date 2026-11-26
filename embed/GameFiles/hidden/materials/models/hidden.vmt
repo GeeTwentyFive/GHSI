@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/hidden"
+	"$bumpmap"     "models/hidden_normal"
+	
+	"$model" 1
+	"$surfaceprop" "flesh"
+	
+	
+	
+	
+}

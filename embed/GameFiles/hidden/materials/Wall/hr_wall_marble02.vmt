@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Wall/HR_Wall_Marble02"
+	"$surfaceprop" "tile"
+	"$bumpmap" "Wall/HR_Wall_Marble02_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.7 .7 .7]"
+}

@@ -1,0 +1,33 @@
+ "soundscapes.tutorial_mainroom"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/underground_hall_loop1.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.2"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor2.wav"
+     }
+
+
+     "playrandom"
+     {
+      "time"         "30,50"
+      "volume"       "0.2,0.4"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/levels/citadel/citadel_hit1_adpcm.wav"
+           "wave"   "ambient/levels/citadel/strange_talk1.wav"
+           "wave"   "ambient/levels/citadel/strange_talk6.wav"
+           "wave"   "ambient/levels/citadel/strange_talk9.wav"
+        } 
+      }
+}
+

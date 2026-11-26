@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models\manor\mn_window03"
+	 $model 1
+	"$surfaceprop" "concrete"
+	"$bumpmap" "Models\manor\mn_window03_normal"
+	"$envmap" "env_cubemap"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.2 .2 .2]"
+}

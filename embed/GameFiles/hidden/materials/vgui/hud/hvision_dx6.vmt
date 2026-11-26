@@ -1,0 +1,10 @@
+"UnlitGeneric_dx6"
+{
+ 	"$model" 1
+	"$basetexture" "vgui/hud/hvision"
+	"$scale" "[1 1]"
+	"$translucent" "1"
+	"$additive" "1"
+//	"$color" "[235 215 215]"
+
+}

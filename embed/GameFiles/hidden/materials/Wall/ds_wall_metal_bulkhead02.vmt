@@ -1,0 +1,10 @@
+"lightmappedgeneric"
+{
+	"$baseTexture" "wall/ds_wall_metal_bulkhead02"
+	"$detail" "detail/detail_floor_metal01"
+	"$detailscale" 2
+	"$surfaceprop" "metal"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "wall/ds_wall_metal_bulkhead02_spec"
+	"$envmaptint" "[.6 .6 .6]"
+}

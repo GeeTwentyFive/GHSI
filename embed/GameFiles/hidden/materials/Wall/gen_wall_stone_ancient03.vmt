@@ -1,0 +1,5 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "wall/gen_wall_stone_ancient03"
+	"$surfaceprop" "concrete"
+}

@@ -1,0 +1,17 @@
+"soundscapes.executive_corridor"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/indoor2.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/corridor.wav"
+     }
+}

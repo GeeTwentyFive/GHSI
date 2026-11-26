@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/player/IRIS_SupplyPacks"
+	"$model" 1
+	"$surfaceprop" "cloth"
+}

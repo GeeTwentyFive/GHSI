@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/labs/gen_glass"
+ 	"$model" 1
+	"$envmap" "env_cubemap"
+//	"$envmapmask" "models/labs/lb_goop2_m"
+	"$envmaptint" "[.95 .95 .95]"
+	"$translucent" "1"	
+	"$envmapsaturation" "[0 0 0]"
+}

@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models/executive/HR_Model_Plantpot01"
+	"$bumpmap"     "models/executive/HR_Model_Plantpot01_normal"
+	
+	"$model" 1
+	"$surfaceprop" "flesh"
+	
+	
+	
+	
+}

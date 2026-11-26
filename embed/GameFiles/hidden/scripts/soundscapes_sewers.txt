@@ -1,0 +1,84 @@
+"soundscapes.sewers_interior"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.15"
+        "pitch"  "100"
+        "wave"   "levels/sewers/svpamb_lowtone.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "levels/sewers/svpamb_midtone.wav"
+     }
+	"playlooping"
+     {
+        "volume" "0.15"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/tone_alley.wav"
+     }
+
+     "playrandom"
+     {
+      "time"         "5,15"
+      "volume"       "0.9,1.0"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "levels/sewers/svpsewer_drip1.wav"
+           "wave"   "levels/sewers/svpsewer_drip2.wav"
+           "wave"   "levels/sewers/svpsewer_drip3.wav"
+           "wave"   "levels/sewers/svpsewer_drip4.wav"
+	   "wave"   "ambient/materials/rustypipes2.wav"
+        } 
+      }
+
+ "playrandom"
+     {
+      "time"         "30,55"
+      "volume"       "0.1,0.2"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "levels/sewers/svpsewer_bat1.wav"
+           "wave"   "levels/sewers/svpsewer_bat2.wav"
+           "wave"   "levels/sewers/svpsewer_bat3.wav"
+           "wave"   "levels/sewers/svpsewer_bat4.wav"
+           "wave"   "levels/sewers/svpsewer_batflap.wav"
+        } 
+      }
+}
+
+ "soundscapes.sewers_exterior"
+{
+     "dsp" "1"
+     "playlooping"
+     {
+        "volume" "0.1"
+        "pitch"  "100"
+        "wave"   "ambient/atmosphere/city_tone.wav"
+     }
+     
+	"playlooping"
+     {
+        "volume" "0.5"
+        "pitch"  "100"
+        "wave"   "ambient/water/corridor_water.wav"
+     }
+
+     "playrandom"
+     {
+      "time"         "25,40"
+      "volume"       "0.3,0.8"
+      "pitch"          "100"
+      "rndwave"
+        {
+           "wave"   "ambient/alarms/train_horn_distant1.wav"
+           "wave"   "ambient/alarms/citadel_alert_loop2.wav"
+        } 
+      }
+}
+

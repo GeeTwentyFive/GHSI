@@ -1,0 +1,8 @@
+"vertexLitGeneric"
+{
+	"$baseTexture" "models\manor\mn_light"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.6 .6 .6]"
+}

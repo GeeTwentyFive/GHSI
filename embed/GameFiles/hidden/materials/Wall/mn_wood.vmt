@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Wall/mn_wood"
+	"$surfaceprop" "wood"
+	"$envmap" "env_cubemap"
+	"$basetexturealphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.5 .5 .5]"
+}

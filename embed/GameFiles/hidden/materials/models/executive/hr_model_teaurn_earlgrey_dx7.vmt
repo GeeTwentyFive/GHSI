@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+{
+	"$model" "1"
+	"$basetexture" "models/executive/hr_model_teaurn_earlgrey"
+	"$additive" "1"
+	"$translucent" "1"
+	"$surfaceprop" "flesh"
+	"$alpha" 0.02
+
+	"Proxies" 
+     		{ 
+            	"Sine" 
+            		{ 
+				"resultVar"    "$alpha" 
+				"sineperiod"   30 
+                  	"sinemin"      0.01
+				"sinemax"      0.015
+     				} 
+		}
+}

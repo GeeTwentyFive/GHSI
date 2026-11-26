@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "Decals/fn303splash1"
+	"$decal" 1
+	"$decalscale" 0.35
+	"$model" 1
+}

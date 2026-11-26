@@ -1,0 +1,6 @@
+"LightmappedGeneric"
+{
+	"$baseTexture" "Models\manor\dc_model_rubble01"
+	"$surfaceprop" "wood"
+	"$bumpmap" "Models\manor\dc_model_rubble01_normal"
+}

@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/manor/mn_fireplace"
+	"$bumpmap" "models/manor/mn_fireplace_normal"
+	"$model" 1
+	"$surfaceprop" "stone"
+	"$envmap" "env_cubemap"
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[.2 .2 .2]"	
+}
